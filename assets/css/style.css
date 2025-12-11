@@ -1,3 +1,112 @@
+body {
+  margin: 0;
+  background-color: rgb(246, 246, 246);
+}
 
+p, span, a, h2, h3, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.title, .navbar__title {
+  font-family: "Shrikhand";
+  font-size: 30;
+  font-weight: 400;
+  z-index: 1;
+  margin: 0;
+}
+
+.section-title, .hero__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text16500, .navbar__location-container {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text18300, .hero__text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.btn, .hero__button {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 13px 16px;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+}
+.btn:hover, .hero__button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(0deg, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.btn:active, .hero__button:active {
+  transform: scale(0.97);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.btn:focus, .hero__button:focus {
+  outline: none;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 39px;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero__title {
+  text-align: center;
+  text-wrap: pretty;
+  margin-top: 0;
+}
+.hero__text {
+  text-align: center;
+  margin-bottom: 27px;
+}
+.hero__button {
+  margin-bottom: 57px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar__title {
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 0.5rem;
+}
+.navbar__location-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(53, 53, 53);
+  background-color: rgb(234, 234, 234);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+
+p, span, a, h2, h3, button{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    font-family: 'Shrikhand';
+    font-size: 30;
+    font-weight: 400;
+    z-index: 1;
+    margin: 0;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text16500{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.text18300{
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0;
+}
+
