@@ -29,9 +29,19 @@
         font-weight: 500;
     }
 
+    &__17300{
+        font-size: 17px;
+        font-weight: 300;
+    }
+
     &--18300{
         font-size: 18px;
         font-weight: 300;
+    }
+
+    &--18700{
+        font-size: 18px;
+        font-weight: 700;
     }
 
     &--14500{
@@ -49,5 +59,15 @@
 
     &--lightgray{
         color: $color-light-gray;
+    }
+}
+
+.link{
+    &--black{
+        color: $color-black;
+    }
+
+    &--no-decoration{
+        text-decoration: none;
     }
 }

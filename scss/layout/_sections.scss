@@ -45,3 +45,13 @@
     }
 }
 
+.restaurants{
+    padding: 54px 18px 66px 17px;
+
+    &__list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}
