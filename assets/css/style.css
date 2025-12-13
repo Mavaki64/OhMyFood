@@ -1,3 +1,35 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 
+.maincontainer {
+  width: 375px;
+}
+
+.site-header__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+.site-header__logo {
+  height: 36px;
+  padding: 14px 0 13px 0;
+}
+.site-header__location-container {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(53, 53, 53);
+  background-color: rgb(234, 234, 234);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 /*# sourceMappingURL=style.css.map */
