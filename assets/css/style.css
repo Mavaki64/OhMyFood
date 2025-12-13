@@ -74,6 +74,9 @@ body {
 .hero__text {
   margin: 0;
 }
+.hero__button {
+  width: 218px;
+}
 
 .btn {
   height: 50px;
@@ -86,8 +89,6 @@ body {
 }
 .btn--primary {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  padding: 13px 18.75px;
-  width: 218px;
 }
 
 /*# sourceMappingURL=style.css.map */
