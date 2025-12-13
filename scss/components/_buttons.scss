@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
 
 .btn{
-    height: 50px;
+    min-height: 3.125rem;
     font-family: "Roboto", sans-serif;
     border-radius: 25px;
     border: none;
