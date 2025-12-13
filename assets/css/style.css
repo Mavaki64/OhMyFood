@@ -8,6 +8,27 @@ body {
   width: 375px;
 }
 
+.main-title--roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-wrap: pretty;
+}
+
+.paragraph {
+  font-family: "Roboto", sans-serif;
+}
+.paragraph--header-style {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+.paragraph--18300gray {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(53, 53, 53);
+}
+
 .site-header__logo-container {
   display: flex;
   align-items: center;
@@ -27,9 +48,46 @@ body {
   gap: 17px;
   align-items: center;
   justify-content: center;
-  color: rgb(53, 53, 53);
   background-color: rgb(234, 234, 234);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.site-header__icon {
+  color: rgb(53, 53, 53);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 29px;
+  padding: 39px 0 57px 0;
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero__title {
+  margin: 0;
+}
+.hero__text {
+  margin: 0;
+}
+
+.btn {
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.btn--primary {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  padding: 13px 18.75px;
+  width: 218px;
 }
 
 /*# sourceMappingURL=style.css.map */
