@@ -1,26 +1,53 @@
 @use "../abstracts/variables" as *;
 
-.main-title{
+.title{
     &--roboto{
         font-family: "Roboto", sans-serif;
+        text-wrap: pretty;
+    }
+
+    &--shrikhand{
+        font-family: "Shrikhand", sans-serif;
+    }
+
+    &--24700{
         font-size: 24px;
         font-weight: 700;
+    }
+
+    &--wrap-pretty{
         text-wrap: pretty;
     }
 }
 
 .paragraph{
     font-family: "Roboto", sans-serif;
+    margin: 0;
 
-    &--header-style{
+    &--16500{
         font-size: 16px;
         font-weight: 500;
+    }
+
+    &--18300{
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    &--14500{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &--white{
+        color: $color-white;
+    }
+
+    &--gray{
         color: $color-dark-gray;
     }
 
-    &--18300gray{
-        font-size: 18px;
-        font-weight: 300;
-        color: $color-dark-gray;
+    &--lightgray{
+        color: $color-light-gray;
     }
 }

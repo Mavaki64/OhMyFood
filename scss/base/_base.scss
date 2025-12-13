@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 body{
     margin: 0;
     display: flex;
@@ -6,4 +8,5 @@ body{
 
 .maincontainer{
     width: 375px;
+    background-color: $primary-background;
 }

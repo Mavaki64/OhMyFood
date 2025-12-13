@@ -6,27 +6,48 @@ body {
 
 .maincontainer {
   width: 375px;
+  background-color: rgb(246, 246, 246);
 }
 
-.main-title--roboto {
+.title--roboto {
   font-family: "Roboto", sans-serif;
+  text-wrap: pretty;
+}
+.title--shrikhand {
+  font-family: "Shrikhand", sans-serif;
+}
+.title--24700 {
   font-size: 24px;
   font-weight: 700;
+}
+.title--wrap-pretty {
   text-wrap: pretty;
 }
 
 .paragraph {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
-.paragraph--header-style {
+.paragraph--16500 {
   font-size: 16px;
   font-weight: 500;
-  color: rgb(53, 53, 53);
 }
-.paragraph--18300gray {
+.paragraph--18300 {
   font-size: 18px;
   font-weight: 300;
+}
+.paragraph--14500 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.paragraph--white {
+  color: #FFFFFF;
+}
+.paragraph--gray {
   color: rgb(53, 53, 53);
+}
+.paragraph--lightgray {
+  color: rgb(126, 126, 126);
 }
 
 .site-header__logo-container {
@@ -50,9 +71,6 @@ body {
   justify-content: center;
   background-color: rgb(234, 234, 234);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.site-header__icon {
-  color: rgb(53, 53, 53);
 }
 
 .hero {
@@ -78,6 +96,22 @@ body {
   width: 218px;
 }
 
+.steps {
+  padding: 48px 20px 68px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  background-color: rgb(255, 255, 255);
+}
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.steps__title {
+  margin: 0;
+}
+
 .btn {
   height: 50px;
   font-family: "Roboto", sans-serif;
@@ -89,6 +123,40 @@ body {
 }
 .btn--primary {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
+}
+
+.steps__card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 73px;
+}
+.steps__number {
+  position: relative;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 12px;
+  right: 0;
+  height: 100%;
+  padding-left: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
