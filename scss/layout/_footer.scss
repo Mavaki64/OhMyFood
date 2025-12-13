@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.footer{
+    background-color: $color-dark-gray;
+    list-style: none;
+    padding: 22px 0 22px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+
+    &__logo{
+        margin: 0;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+    }
+}

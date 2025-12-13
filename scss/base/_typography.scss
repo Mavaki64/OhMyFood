@@ -10,6 +10,11 @@
         font-family: "Shrikhand", sans-serif;
     }
 
+    &--18400{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
     &--24700{
         font-size: 24px;
         font-weight: 700;
@@ -18,6 +23,7 @@
     &--wrap-pretty{
         text-wrap: pretty;
     }
+
 }
 
 .paragraph{
