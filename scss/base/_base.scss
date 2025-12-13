@@ -1,6 +1,13 @@
 @use "../abstracts/variables" as *;
 
 body{
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maincontainer{
+    width: 375px;
     background-color: $primary-background;
+    overflow-x: hidden;
 }

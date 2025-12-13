@@ -1,32 +1,61 @@
-@use "sass:color";
 @use "../abstracts/variables" as *;
 
-p, span, a, h2, h3, button{
-    font-family: 'Roboto', sans-serif;
-}
-
 .title{
-    font-family: 'Shrikhand';
-    font-size: 30;
-    font-weight: 400;
-    z-index: 1;
     margin: 0;
+    z-index: 1;
+
+    &--primary {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &--secondary {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
 }
 
 .section-title{
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+
+    &--primary {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &--secondary {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 }
 
-.text16500{
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.text18300{
-    font-size: 1.125rem;
-    font-weight: 300;
+.paragraph{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-}
+    color: $color-black;
 
+    &--huge {
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    &--big{
+        font-size: 1.0625rem;
+        font-weight: 300;
+    }
+
+    &--medium-heavyweight{
+        font-size: 1rem;
+        font-weight: 500;
+        color: $color-dark-gray;
+    }
+
+    &--medium{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+}

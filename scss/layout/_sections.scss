@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+
+.hero{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 39px;
+
+    &__title{
+        text-wrap: pretty;
+        margin-top: 0;
+        text-align: center;
+        height: 68px;
+    }
+
+    &__text{
+        text-align: center;
+        margin-top: 0;
+        height: 46px;
+    }
+
+    &__button{
+        width: 218px;
+        margin-top: 27px;
+        margin-bottom: 57px;
+    }
+}
+
+.steps{
+    width: 375px;
+    height: 440px;
+    background-color: $secondary-background;
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__list{
+        margin-top: 26px;  // Remplace top: 26px
+        display: flex;
+        flex-direction: column;
+        gap: 24.92px;
+    }
+}
+
+.restaurants{
+    width: 375px;
+    height: 1226px;
+}

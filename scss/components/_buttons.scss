@@ -6,17 +6,15 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    color: $color-white;
     font-weight: 500;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     padding: 13px 16px;
-
-    @include gradient($primary-color, $secondary-color, 0deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
         transform: scale(1.03);
-        @include lighten-gradient($primary-color, $secondary-color, 0deg, 5%);
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 
     }
@@ -29,5 +27,14 @@
 
     &:focus {
         outline: none;
+    }
+
+    &--primary {
+        color: $color-white;
+        @include gradient($primary-color, $secondary-color, 0deg);
+
+        &:hover {
+            @include lighten-gradient($primary-color, $secondary-color, 0deg, 5%);
+        }
     }
 }
