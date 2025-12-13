@@ -1,9 +1,0 @@
-@use "sass:color";
-
-@mixin gradient($color1, $color2, $angle: 180deg) {
-  background: linear-gradient($angle, $color1, $color2);
-}
-
-@mixin lighten-gradient($color1, $color2, $angle: 180deg, $light-percent: 15%) {
-  background: linear-gradient($angle, color.adjust($color1, $lightness: $light-percent), color.adjust($color2, $lightness: $light-percent));
-}
