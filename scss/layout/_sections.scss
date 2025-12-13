@@ -1,17 +1,15 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholders" as *;
 
 .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     text-align: center;
     gap: 29px;
     padding: 2.4375rem 0 3.5625rem 0;
 
     &__wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        @include flex-column(10px);
     }
 
     &__title{
@@ -30,19 +28,15 @@
 
 .steps{
     padding: 3rem 1.25rem 4.25rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
+    @include flex-column(26px);
     background-color: $secondary-background;
 
     &__list{
-        display: flex;
-        flex-direction: column;
-        gap: 26px;
+        @include flex-column(26px);
     }
 
     &__title{
-        margin: 0;
+        @extend %reset-margin;
     }
 }
 
@@ -51,8 +45,6 @@
 
     &__list{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
+        @include flex-column(18px);
     }
 }

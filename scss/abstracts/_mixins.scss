@@ -1,0 +1,49 @@
+@use "sass:color";
+
+@mixin gradient($color1, $color2, $angle: 180deg) {
+  background: linear-gradient($angle, $color1, $color2);
+}
+
+@mixin lighten-gradient($color1, $color2, $angle: 180deg, $light-percent: 15%) {
+  background: linear-gradient($angle, color.adjust($color1, $lightness: $light-percent), color.adjust($color2, $lightness: $light-percent));
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-column-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column($gap: 0) {
+    display: flex;
+    flex-direction: column;
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}
+
+@mixin flex-row($gap: 0) {
+    display: flex;
+    flex-direction: row;
+    @if $gap > 0 {
+        gap: $gap;
+    }
+}

@@ -1,28 +1,24 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholders" as *;
 
 .footer{
     background-color: $color-dark-gray;
     list-style: none;
     padding: 1.375rem 0 1.375rem 1.5625rem;
-    display: flex;
-    flex-direction: column;
+    @include flex-column-start;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 16px;
 
     &__logo{
-        margin: 0;
+        @extend %reset-margin
     }
 
     &__menu{
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
+        @include flex-column(7px)
     }
 
     &__link{
-        display: flex;
-        flex-direction: row;
-        gap: 11px;
+        @include flex-row(11px)
     }
 }
