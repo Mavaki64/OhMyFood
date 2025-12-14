@@ -20,7 +20,7 @@ body {
   z-index: 1;
 }
 
-.restaurants__badge, .footer__list, .title, .paragraph, .steps__number, .steps__label, .restaurants__card-text, .footer__link, .hero__text, .restaurants__card-title, .footer__logo {
+.restaurants__badge, .footer__list, .title, .paragraph, .link, .steps__number, .steps__label, .restaurants__card-text, .hero__text, .restaurants__card-title, .footer__logo, .footer__link {
   margin: 0;
 }
 
@@ -45,15 +45,18 @@ body {
 .title--wrap-pretty {
   text-wrap: pretty;
 }
+.title--white, .footer__logo {
+  color: #FFFFFF;
+}
 
-.paragraph, .steps__number, .steps__label, .restaurants__card-text, .footer__link, .hero__text {
+.paragraph, .steps__number, .steps__label, .restaurants__card-text, .hero__text {
   font-family: "Roboto", sans-serif;
 }
 .paragraph--small, .steps__number {
   font-size: 0.875rem;
   font-weight: 500;
 }
-.paragraph--medium, .steps__label, .footer__link {
+.paragraph--medium, .steps__label {
   font-size: 1rem;
   font-weight: 500;
 }
@@ -69,7 +72,7 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
 }
-.paragraph--white, .steps__number, .footer__logo, .footer__link {
+.paragraph--white, .steps__number {
   color: #FFFFFF;
 }
 .paragraph--gray, .hero__text, .site-header__icon {
@@ -79,11 +82,21 @@ body {
   color: rgb(126, 126, 126);
 }
 
+.link, .footer__link {
+  font-family: "Roboto", sans-serif;
+}
 .link--black {
   color: #000000;
 }
+.link--white, .footer__link {
+  color: #FFFFFF;
+}
 .link--no-decoration, .footer__link {
   text-decoration: none;
+}
+.link--medium, .footer__link {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .site-header__logo-container {

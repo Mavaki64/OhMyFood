@@ -32,6 +32,10 @@
     &--wrap-pretty{
         text-wrap: pretty;
     }
+
+    &--white{
+        color: $color-white;
+    }
 }
 
 .paragraph{
@@ -76,11 +80,23 @@
 }
 
 .link{
+    font-family: "Roboto", sans-serif;
+    @extend %reset-margin;
+    
     &--black{
         color: $color-black;
     }
 
+    &--white{
+        color: $color-white;
+    }
+
     &--no-decoration{
         text-decoration: none;
+    }
+
+    &--medium{
+        font-size: rem(16);
+        font-weight: 500;
     }
 }

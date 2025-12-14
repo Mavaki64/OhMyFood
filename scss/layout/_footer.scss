@@ -14,7 +14,7 @@
         @extend .title;
         @extend .title--shrikhand;
         @extend .title--small;
-        @extend .paragraph--white;
+        @extend .title--white;
     }
 
     &__list{
@@ -26,9 +26,9 @@
 
     &__link{
         @include flex-row(11px);
-        @extend .paragraph;
-        @extend .paragraph--medium;
-        @extend .paragraph--white;
+        @extend .link;
+        @extend .link--medium;
+        @extend .link--white;
         @extend .link--no-decoration;
     }
 }
