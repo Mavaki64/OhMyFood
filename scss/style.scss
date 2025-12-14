@@ -11,11 +11,11 @@
 @use "layout/header.scss";
 @use "layout/sections.scss";
 @use "layout/footer.scss";
+@use "layout/loader.scss";
 
 //4. Components
 @use "components/buttons.scss";
 @use "components/cards.scss";
-@use "components/nav.scss";
 
 //5. Pages
 @use "pages/home.scss";

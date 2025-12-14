@@ -29,6 +29,16 @@
 </head>
 
 <body>
+    <div class="loader">
+        <i class="loader__spinner-icon fa-solid fa-hourglass"></i>
+        <p class="loader__text">Chargement
+            <span class="loader__dots">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </span>
+        </p>
+    </div>
     <main class="maincontainer">
         <header class="site-header">
             <div class="site-header__logo-container">
@@ -76,7 +86,7 @@
                 <div class="steps__card">
                     <p class="steps__number">3</p>
                     <div class="steps__card-wrapper">
-                        <i class="steps__icon fa-solid fa-store"></i>
+                        <i class="steps__icon--purple fa-solid fa-store"></i>
                         <p class="steps__label">Dégustez au restaurant</p>
                     </div>
                 </div>
@@ -104,7 +114,7 @@
                                 <input type="checkbox" class="restaurants__heart-checkbox">
                                 <i class="fa-regular fa-heart restaurants__heart-outline"></i>
                                 <i class="fa-solid fa-heart restaurants__heart-fill"></i>
-                            </label>  
+                            </label>
                         </div>
                     </div>
                 </a>
@@ -179,13 +189,13 @@
                 <nav class="footer__menu">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__link" href="#">
+                            <a class="footer__link--bold" href="#">
                                 <i class="footer__icon fa-solid fa-utensils"></i>
                                 <span class="footer__text">Proposer un restaurant</span>
                             </a>
                         </li>
                         <li class="footer__item">
-                            <a class="footer__link" href="#">
+                            <a class="footer__link--bold" href="#">
                                 <i class="footer__icon fa-solid fa-handshake-angle"></i>
                                 <span class="footer__text">Devenir partenaire</span>
                             </a>
