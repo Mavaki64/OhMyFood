@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 $color-light-blue: #89C8FA;
 $color-blue: #003A68;
 $color-white: #FFFFFF;
@@ -30,16 +32,16 @@ $radius-xl: 20px;
 $radius-button: 25px;
 
 // Gaps
-$gap-xs: 5px;
-$gap-sm: 7px;
-$gap-md: 10px;
-$gap-lg: 11px;
-$gap-xl: 16px;
-$gap-2xl: 17px;
-$gap-3xl: 18px;
-$gap-4xl: 20px;
-$gap-5xl: 26px;
-$gap-6xl: 29px;
+$gap-xs: rem(5);
+$gap-sm: rem(7);
+$gap-md: rem(10);
+$gap-lg: rem(11);
+$gap-xl: rem(16);
+$gap-2xl: rem(17);
+$gap-3xl: rem(18);
+$gap-4xl: rem(20);
+$gap-5xl: rem(26);
+$gap-6xl: rem(29);
 
 // Paddings
 $padding-logo: 14px 0 13px 0;

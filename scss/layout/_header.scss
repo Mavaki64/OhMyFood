@@ -19,7 +19,7 @@
 
     &__location-container{
         height: 50px;
-        @include flex-row(17px);
+        @include flex-row($gap-2xl);
         align-items: center;
         justify-content: center;
         background-color: $tertiary-background;

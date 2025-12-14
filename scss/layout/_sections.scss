@@ -5,11 +5,11 @@
 .hero{
     @include flex-column-center;
     text-align: center;
-    gap: 29px;
+    gap: $gap-6xl;
     padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
 
     &__wrapper{
-        @include flex-column(10px);
+        @include flex-column($gap-md);
     }
 
     &__title{
@@ -30,11 +30,11 @@
 
 .steps{
     padding: 3rem 1.25rem 4.25rem 1.25rem;
-    @include flex-column(26px);
+    @include flex-column($gap-5xl);
     background-color: $secondary-background;
 
     &__list{
-        @include flex-column(26px);
+        @include flex-column($gap-5xl);
     }
 
     &__title{
@@ -47,7 +47,7 @@
 
     &__list{
         width: 100%;
-        @include flex-column(18px);
+        @include flex-column($gap-3xl);
     }
 
     &__title{

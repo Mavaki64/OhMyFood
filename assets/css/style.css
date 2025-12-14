@@ -113,7 +113,7 @@ body {
   height: 50px;
   display: flex;
   flex-direction: row;
-  gap: 17px;
+  gap: 1.0625rem;
   align-items: center;
   justify-content: center;
   background-color: rgb(234, 234, 234);
@@ -132,13 +132,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 29px;
+  gap: 1.8125rem;
   padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
 }
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .hero__title {
   font-family: "Roboto", sans-serif;
@@ -156,13 +156,13 @@ body {
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 1.625rem;
   background-color: rgb(255, 255, 255);
 }
 .steps__list {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 1.625rem;
 }
 .steps__title {
   font-family: "Roboto", sans-serif;
@@ -178,7 +178,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.125rem;
 }
 .restaurants__title {
   font-family: "Roboto", sans-serif;
@@ -194,19 +194,19 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
 }
 .footer__list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 0.4375rem;
   list-style: none;
   padding: 0;
 }
 .footer__link {
   display: flex;
   flex-direction: row;
-  gap: 11px;
+  gap: 0.6875rem;
 }
 
 .btn {
@@ -248,7 +248,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   border-radius: 20px;
   background-color: rgb(246, 246, 246);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -303,7 +303,7 @@ body {
 .restaurants__card-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 .restaurants__like-icon {
   font-size: 22px;

@@ -35,7 +35,7 @@
 
     &__card-wrapper{
         @include flex-row-center;
-        gap: 20px;
+        gap: $gap-4xl;
         border-radius: $radius-xl;
         background-color: $primary-background;
         box-shadow: $shadow-card;
@@ -93,7 +93,7 @@
     }
 
     &__card-info{
-        @include flex-column(5px);
+        @include flex-column($gap-xs);
     }
 
     &__card-title{
