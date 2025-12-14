@@ -8,6 +8,7 @@
     &__card{
         position: relative;
         width: 100%;
+        max-width: 335px;
         @include flex-row-center;
         min-height: 4.5625rem;
     }
@@ -50,6 +51,8 @@
 .restaurants{
     &__card{
         width: 100%;
+        min-width: 340px;
+        max-width: 340px;
         min-height: 15.6875rem;
         border-radius: $radius-large;
         background-color: $secondary-background;

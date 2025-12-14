@@ -7,8 +7,15 @@
     background-color: $color-dark-gray;
     padding: $padding-footer;
     @include flex-column-start;
-    justify-content: space-between;
-    gap: $gap-xl;
+    
+    align-items: center;
+
+    &__wrapper{
+        width: 340px;
+        @include flex-column-start;
+        justify-content: space-between;
+        gap: $gap-xl;
+    }
 
     &__logo{
         @extend .title;
