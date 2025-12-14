@@ -97,6 +97,7 @@
     &__card-title{
         @extend .title;
         @extend .title--small-bold;
+        @extend .title--roboto;
     }
 
     &__card-text{

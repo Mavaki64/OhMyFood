@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-.title--roboto {
+.title--roboto, .restaurants__card-title {
   font-family: "Roboto", sans-serif;
 }
 .title--shrikhand, .footer__logo {
