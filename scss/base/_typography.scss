@@ -82,7 +82,7 @@
 .link{
     font-family: "Roboto", sans-serif;
     @extend %reset-margin;
-    
+
     &--black{
         color: $color-black;
     }
@@ -95,8 +95,13 @@
         text-decoration: none;
     }
 
-    &--medium{
+    &--medium-bold{
         font-size: rem(16);
         font-weight: 500;
+    }
+
+    &--medium{
+        font-size: rem(16);
+        font-weight: 400;
     }
 }

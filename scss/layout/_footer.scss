@@ -37,5 +37,13 @@
         @extend .link--medium;
         @extend .link--white;
         @extend .link--no-decoration;
+
+        &--bold{
+            @include flex-row($gap-lg);
+            @extend .link;
+            @extend .link--medium-bold;
+            @extend .link--white;
+            @extend .link--no-decoration;
+        }
     }
 }
