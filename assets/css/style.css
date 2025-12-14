@@ -245,7 +245,13 @@ body {
 }
 .btn:hover {
   transform: scale(1.02);
+  background: linear-gradient(0deg, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.btn:active {
+  outline: none;
+  scale: 0.98;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .steps__card {
@@ -333,6 +339,13 @@ body {
   font-size: 22px;
   cursor: pointer;
 }
+.restaurants__heart-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
 .restaurants__heart-outline {
   color: #000000;
   transition: transform 0.35s ease;
@@ -347,11 +360,17 @@ body {
   transform-origin: center;
   transition: transform 0.35s ease;
 }
-.restaurants__fa-heart-wrap:hover .restaurants__heart-fill {
+.restaurants__heart-checkbox:checked ~ .restaurants__heart-fill {
   transform: scale(1);
 }
-.restaurants__fa-heart-wrap:hover .restaurants__heart-outline {
+.restaurants__heart-checkbox:checked ~ .restaurants__heart-outline {
   transform: scale(0);
+}
+.restaurants__fa-heart-wrap:hover .restaurants__heart-outline {
+  opacity: 0.7;
+}
+.restaurants__heart-checkbox:checked ~ .restaurants__heart-outline {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

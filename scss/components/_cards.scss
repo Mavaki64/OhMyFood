@@ -115,6 +115,14 @@
         cursor: pointer;
     }
 
+    &__heart-checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
+
     &__heart-outline {
         color: $color-black;
         transition: transform 0.35s ease;
@@ -131,11 +139,19 @@
         transition: transform 0.35s ease;
     }
       
-    &__fa-heart-wrap:hover &__heart-fill {
+    &__heart-checkbox:checked ~ &__heart-fill {
         transform: scale(1);
     }
 
-    &__fa-heart-wrap:hover &__heart-outline {
+    &__heart-checkbox:checked ~ &__heart-outline {
         transform: scale(0);
+    }
+
+    &__fa-heart-wrap:hover &__heart-outline {
+        opacity: 0.7;
+    }
+    
+    &__heart-checkbox:checked ~ &__heart-outline {
+        opacity: 0;
     }
 }
