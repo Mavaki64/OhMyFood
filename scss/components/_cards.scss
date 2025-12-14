@@ -49,6 +49,7 @@
 
 .restaurants{
     &__card{
+        width: 100%;
         min-height: 15.6875rem;
         border-radius: $radius-large;
         background-color: $secondary-background;
@@ -64,11 +65,8 @@
 
     &__image{
         position: absolute;
-        top: $position-image-top;
-        left: $position-image-left;
         width: 100%;
         object-fit: cover;
-        height: rem(231);
     }
 
     &__badge{

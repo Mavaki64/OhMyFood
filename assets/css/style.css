@@ -260,6 +260,7 @@ body {
 }
 
 .restaurants__card {
+  width: 100%;
   min-height: 15.6875rem;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
@@ -273,11 +274,8 @@ body {
 }
 .restaurants__image {
   position: absolute;
-  top: -57px;
-  left: -3px;
   width: 100%;
   object-fit: cover;
-  height: 14.4375rem;
 }
 .restaurants__badge {
   top: 13px;
