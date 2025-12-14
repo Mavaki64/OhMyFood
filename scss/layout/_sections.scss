@@ -6,22 +6,19 @@
     @include flex-column-center;
     text-align: center;
     gap: 29px;
-    padding: 2.4375rem 0 3.5625rem 0;
+    padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
 
     &__wrapper{
         @include flex-column(10px);
     }
 
     &__title{
-        @extend .title;
-        @extend .title--roboto;
-        @extend .title--medium;
-        @extend .title--wrap-pretty;
+        @include title-hero;
     }
 
     &__text{
         @extend .paragraph;
-        @extend .paragraph--large;
+        @extend .paragraph--xlarge;
         @extend .paragraph--gray;
     }
 
@@ -41,9 +38,7 @@
     }
 
     &__title{
-        @extend .title;
-        @extend .title--roboto;
-        @extend .title--medium;
+        @include title-section;
     }
 }
 
@@ -56,8 +51,6 @@
     }
 
     &__title{
-        @extend .title;
-        @extend .title--roboto;
-        @extend .title--medium;
+        @include title-section;
     }
 }

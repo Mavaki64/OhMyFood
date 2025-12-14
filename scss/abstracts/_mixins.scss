@@ -1,5 +1,8 @@
 @use "sass:color";
+@use "functions" as *;
+@use "variables" as *;
 
+// Mixins gradients
 @mixin gradient($color1, $color2, $angle: 180deg) {
   background: linear-gradient($angle, $color1, $color2);
 }
@@ -8,6 +11,7 @@
   background: linear-gradient($angle, color.adjust($color1, $lightness: $light-percent), color.adjust($color2, $lightness: $light-percent));
 }
 
+// Mixins flexbox
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
@@ -32,18 +36,42 @@
     justify-content: center;
 }
 
-@mixin flex-column($gap: 0) {
+@mixin flex-column($gap: null) {
     display: flex;
     flex-direction: column;
-    @if $gap > 0 {
+    @if $gap{
         gap: $gap;
     }
 }
 
-@mixin flex-row($gap: 0) {
+@mixin flex-row($gap: null) {
     display: flex;
     flex-direction: row;
-    @if $gap > 0 {
+    @if $gap{
         gap: $gap;
     }
+}
+
+// Mixins typographiques
+@mixin title-section {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(24);
+    font-weight: 700;
+    margin: 0;
+}
+
+@mixin title-hero {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(24);
+    font-weight: 700;
+    text-wrap: pretty;
+    margin: 0;
+}
+
+@mixin paragraph-medium-gray {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(16);
+    font-weight: 500;
+    color: $color-dark-gray;
+    margin: 0;
 }

@@ -2,6 +2,7 @@
 @use "../abstracts/placeholders" as *;
 @use "../abstracts/mixins" as *;
 @use "../base/typography" as *;
+@use "../abstracts/functions" as *;
 
 .site-header{
 
@@ -12,8 +13,8 @@
     }
     
     &__logo{
-        height: 36px;
-        padding: 14px 0 13px 0;
+        height: rem(36);
+        padding: rem(14) 0 rem(13) 0;
     }
 
     &__location-container{
@@ -30,7 +31,6 @@
     }
 
     &__location{
-        @extend .paragraph--medium;
-        @extend .paragraph--gray;
+        @include paragraph-medium-gray;
     }
 }

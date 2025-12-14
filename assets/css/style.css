@@ -20,25 +20,29 @@ body {
   z-index: 1;
 }
 
-.restaurants__badge, .title, .paragraph, .steps__number, .steps__label, .restaurants__card-text, .footer__link, .hero__text, .restaurants__card-title, .footer__logo, .hero__title, .steps__title, .restaurants__title {
+.restaurants__badge, .footer__list, .title, .paragraph, .steps__number, .steps__label, .restaurants__card-text, .footer__link, .hero__text, .restaurants__card-title, .footer__logo {
   margin: 0;
 }
 
-.title--roboto, .hero__title, .steps__title, .restaurants__title {
+.title--roboto {
   font-family: "Roboto", sans-serif;
 }
 .title--shrikhand, .footer__logo {
   font-family: "Shrikhand", sans-serif;
 }
 .title--small, .footer__logo {
-  font-size: calc(1.125px * 1rem);
+  font-size: 1.125rem;
   font-weight: 400;
 }
-.title--medium, .hero__title, .steps__title, .restaurants__title {
-  font-size: calc(1.5px * 1rem);
+.title--small-bold, .restaurants__card-title {
+  font-size: 1.125rem;
   font-weight: 700;
 }
-.title--wrap-pretty, .hero__title {
+.title--medium {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.title--wrap-pretty {
   text-wrap: pretty;
 }
 
@@ -46,29 +50,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .paragraph--small, .steps__number {
-  font-size: calc(0.875px * 1rem);
+  font-size: 0.875rem;
   font-weight: 500;
 }
-.paragraph--medium, .steps__label, .footer__link, .site-header__location {
-  font-size: calc(1px * 1rem);
+.paragraph--medium, .steps__label, .footer__link {
+  font-size: 1rem;
   font-weight: 500;
 }
-.paragraph--large, .restaurants__card-text, .hero__text {
-  font-size: calc(1.0625px * 1rem);
+.paragraph--large, .restaurants__card-text {
+  font-size: 1.0625rem;
   font-weight: 300;
 }
-.paragraph--xlarge {
-  font-size: calc(1.125px * 1rem);
+.paragraph--xlarge, .hero__text {
+  font-size: 1.125rem;
   font-weight: 300;
 }
-.paragraph--xlarge-bold, .restaurants__card-title {
-  font-size: calc(1.125px * 1rem);
+.paragraph--xlarge-bold {
+  font-size: 1.125rem;
   font-weight: 700;
 }
 .paragraph--white, .steps__number, .footer__logo, .footer__link {
   color: #FFFFFF;
 }
-.paragraph--gray, .hero__text, .site-header__icon, .site-header__location {
+.paragraph--gray, .hero__text, .site-header__icon {
   color: rgb(53, 53, 53);
 }
 .paragraph--lightgray, .steps__icon {
@@ -89,8 +93,8 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .site-header__logo {
-  height: 36px;
-  padding: 14px 0 13px 0;
+  height: 2.25rem;
+  padding: 0.875rem 0 0.8125rem 0;
 }
 .site-header__location-container {
   height: 50px;
@@ -102,18 +106,33 @@ body {
   background-color: rgb(234, 234, 234);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.site-header__location {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+  margin: 0;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 29px;
-  padding: 2.4375rem 0 3.5625rem 0;
+  padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
 }
 .hero__wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.hero__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-wrap: pretty;
+  margin: 0;
 }
 .hero__button {
   width: 100%;
@@ -132,6 +151,13 @@ body {
   flex-direction: column;
   gap: 26px;
 }
+.steps__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
 .restaurants {
   padding: 3.375rem 1.125rem 4.125rem 1.0625rem;
 }
@@ -141,9 +167,15 @@ body {
   flex-direction: column;
   gap: 18px;
 }
+.restaurants__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
 .footer {
   background-color: rgb(53, 53, 53);
-  list-style: none;
   padding: 1.375rem 0 1.375rem 1.5625rem;
   display: flex;
   flex-direction: column;
@@ -151,10 +183,12 @@ body {
   justify-content: space-between;
   gap: 16px;
 }
-.footer__menu {
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  list-style: none;
+  padding: 0;
 }
 .footer__link {
   display: flex;
@@ -170,9 +204,14 @@ body {
   outline: none;
   color: #FFFFFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn--primary {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
+}
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 .steps__card {
@@ -215,7 +254,7 @@ body {
 .restaurants__image-container {
   overflow: hidden;
   position: relative;
-  height: 174px;
+  height: calc(14.4375rem - 3.5625rem);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }

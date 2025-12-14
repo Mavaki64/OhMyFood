@@ -15,46 +15,50 @@
     }
 
     &--small{
-        font-size: rem(18px);
+        font-size: rem(18);
         font-weight: 400;
     }
 
+    &--small-bold{
+        font-size: rem(18);
+        font-weight: 700;
+    }
+
     &--medium{
-        font-size: rem(24px);
+        font-size: rem(24);
         font-weight: 700;
     }
 
     &--wrap-pretty{
         text-wrap: pretty;
     }
-
 }
 
 .paragraph{
     font-family: "Roboto", sans-serif;
     @extend %reset-margin;
     &--small{
-        font-size: rem(14px);
+        font-size: rem(14);
         font-weight: 500;
     }
 
     &--medium{
-        font-size: rem(16px);
+        font-size: rem(16);
         font-weight: 500;
     }
 
     &--large{
-        font-size: rem(17px);
+        font-size: rem(17);
         font-weight: 300;
     }
 
     &--xlarge{
-        font-size: rem(18px);
+        font-size: rem(18);
         font-weight: 300;
     }
 
     &--xlarge-bold{
-        font-size: rem(18px);
+        font-size: rem(18);
         font-weight: 700;
     }
 
