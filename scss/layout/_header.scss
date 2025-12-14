@@ -14,11 +14,11 @@
     
     &__logo{
         height: rem(36);
-        padding: rem(14) 0 rem(13) 0;
+        padding: $padding-logo;
     }
 
     &__location-container{
-        height: 50px;
+        height: rem(50);
         @include flex-row($gap-2xl);
         align-items: center;
         justify-content: center;

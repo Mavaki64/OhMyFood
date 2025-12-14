@@ -110,7 +110,7 @@ body {
   padding: 0.875rem 0 0.8125rem 0;
 }
 .site-header__location-container {
-  height: 50px;
+  height: 3.125rem;
   display: flex;
   flex-direction: row;
   gap: 1.0625rem;
@@ -133,7 +133,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 1.8125rem;
-  padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
+  padding: 2.4375rem 0 3.5625rem 0;
 }
 .hero__wrapper {
   display: flex;
@@ -239,7 +239,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  width: 1.5rem;
   height: 1.5rem;
   border-radius: 12px;
   background-color: #9356DC;
@@ -277,13 +277,13 @@ body {
   left: -3px;
   width: 100%;
   object-fit: cover;
-  height: 231px;
+  height: 14.4375rem;
 }
 .restaurants__badge {
   top: 13px;
   right: 12px;
   width: auto;
-  min-width: 80px;
+  min-width: 5rem;
   min-height: 1.8125rem;
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);

@@ -15,7 +15,7 @@
     &__number{
         @extend %position-relative-z;
         @include flex-center;
-        width: 24px;
+        width: rem(24);
         height: 1.5rem;
         border-radius: $radius-medium;
         background-color: $primary-color;
@@ -40,7 +40,7 @@
         background-color: $primary-background;
         box-shadow: $shadow-card;
         position: absolute;
-        left: 12px;
+        left: $position-wrapper-left;
         right: 0;
         height: 100%;
         padding-left: 2.1875rem;
@@ -64,19 +64,19 @@
 
     &__image{
         position: absolute;
-        top: -57px;
-        left: -3px;
+        top: $position-image-top;
+        left: $position-image-left;
         width: 100%;
         object-fit: cover;
-        height: 231px;
+        height: rem(231);
     }
 
     &__badge{
         @extend %position-absolute-z;
-        top : 13px;
-        right: 12px;
+        top : $position-badge-top;
+        right: $position-badge-right;
         width: auto;
-        min-width: 80px;
+        min-width: rem(80);
         min-height: 1.8125rem;
         border-radius: $radius-small;
         box-shadow: $shadow-light;
@@ -89,7 +89,7 @@
     &__card-content{
         @include flex-row-center;
         justify-content: space-between;
-        padding: 1rem 1.5625rem 0.75rem 0.8125rem;
+        padding: $padding-card-content;
     }
 
     &__card-info{

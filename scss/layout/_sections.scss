@@ -6,7 +6,7 @@
     @include flex-column-center;
     text-align: center;
     gap: $gap-6xl;
-    padding: 2.4375rem 1.625rem 3.5625rem 2.125rem;
+    padding: $padding-hero;
 
     &__wrapper{
         @include flex-column($gap-md);
@@ -29,7 +29,7 @@
 }
 
 .steps{
-    padding: 3rem 1.25rem 4.25rem 1.25rem;
+    padding: $padding-steps;
     @include flex-column($gap-5xl);
     background-color: $secondary-background;
 
@@ -43,7 +43,7 @@
 }
 
 .restaurants{
-    padding: 3.375rem 1.125rem 4.125rem 1.0625rem;
+    padding: $padding-restaurants;
 
     &__list{
         width: 100%;
