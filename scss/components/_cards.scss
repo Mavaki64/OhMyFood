@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/placeholders" as *;
 @use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
 
 .steps{
     &__card{
@@ -17,6 +18,18 @@
         height: 1.5rem;
         border-radius: $radius-medium;
         background-color: $primary-color;
+        @extend .paragraph;
+        @extend .paragraph--small;
+        @extend .paragraph--white;
+    }
+
+    &__icon{
+        @extend .paragraph--lightgray;
+    }
+
+    &__label{
+        @extend .paragraph;
+        @extend .paragraph--medium;
     }
 
     &__card-wrapper{
@@ -58,8 +71,7 @@
     }
 
     &__badge{
-        position: absolute;
-        z-index: 1;
+        @extend %position-absolute-z;
         top : 13px;
         right: 12px;
         width: auto;
@@ -81,6 +93,16 @@
 
     &__card-info{
         @include flex-column(5px);
+    }
+
+    &__card-title{
+        @extend .title;
+        @extend .paragraph--xlarge-bold;
+    }
+
+    &__card-text{
+        @extend .paragraph;
+        @extend .paragraph--large;
     }
 
     &__like-icon{

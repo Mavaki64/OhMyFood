@@ -1,22 +1,26 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/functions" as *;
 
 .title{
+
+    @extend %reset-margin;
+
     &--roboto{
         font-family: "Roboto", sans-serif;
-        text-wrap: pretty;
     }
 
     &--shrikhand{
         font-family: "Shrikhand", sans-serif;
     }
 
-    &--18400{
-        font-size: 18px;
+    &--small{
+        font-size: rem(18px);
         font-weight: 400;
     }
 
-    &--24700{
-        font-size: 24px;
+    &--medium{
+        font-size: rem(24px);
         font-weight: 700;
     }
 
@@ -28,31 +32,30 @@
 
 .paragraph{
     font-family: "Roboto", sans-serif;
-    margin: 0;
-
-    &--16500{
-        font-size: 16px;
+    @extend %reset-margin;
+    &--small{
+        font-size: rem(14px);
         font-weight: 500;
     }
 
-    &__17300{
-        font-size: 17px;
+    &--medium{
+        font-size: rem(16px);
+        font-weight: 500;
+    }
+
+    &--large{
+        font-size: rem(17px);
         font-weight: 300;
     }
 
-    &--18300{
-        font-size: 18px;
+    &--xlarge{
+        font-size: rem(18px);
         font-weight: 300;
     }
 
-    &--18700{
-        font-size: 18px;
+    &--xlarge-bold{
+        font-size: rem(18px);
         font-weight: 700;
-    }
-
-    &--14500{
-        font-size: 14px;
-        font-weight: 500;
     }
 
     &--white{

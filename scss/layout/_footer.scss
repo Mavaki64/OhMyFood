@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @use "../abstracts/placeholders" as *;
+@use "../base/typography" as *;
 
 .footer{
     background-color: $color-dark-gray;
@@ -11,7 +12,10 @@
     gap: 16px;
 
     &__logo{
-        @extend %reset-margin
+        @extend .title;
+        @extend .title--shrikhand;
+        @extend .title--small;
+        @extend .paragraph--white;
     }
 
     &__menu{
@@ -19,6 +23,10 @@
     }
 
     &__link{
-        @include flex-row(11px)
+        @include flex-row(11px);
+        @extend .paragraph;
+        @extend .paragraph--medium;
+        @extend .paragraph--white;
+        @extend .link--no-decoration;
     }
 }

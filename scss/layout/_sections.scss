@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
-@use "../abstracts/placeholders" as *;
+@use "../base/typography" as *;
 
 .hero{
     @include flex-column-center;
@@ -13,11 +13,16 @@
     }
 
     &__title{
-        margin: 0;
+        @extend .title;
+        @extend .title--roboto;
+        @extend .title--medium;
+        @extend .title--wrap-pretty;
     }
 
     &__text{
-        margin: 0;
+        @extend .paragraph;
+        @extend .paragraph--large;
+        @extend .paragraph--gray;
     }
 
     &__button{
@@ -36,7 +41,9 @@
     }
 
     &__title{
-        @extend %reset-margin;
+        @extend .title;
+        @extend .title--roboto;
+        @extend .title--medium;
     }
 }
 
@@ -46,5 +53,11 @@
     &__list{
         width: 100%;
         @include flex-column(18px);
+    }
+
+    &__title{
+        @extend .title;
+        @extend .title--roboto;
+        @extend .title--medium;
     }
 }
