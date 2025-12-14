@@ -108,7 +108,34 @@
         @extend .paragraph--large;
     }
 
-    &__like-icon{
+    &__fa-heart-wrap {
+        position: relative;
+        display: inline-block;
         font-size: 22px;
+        cursor: pointer;
+    }
+
+    &__heart-outline {
+        color: $color-black;
+        transition: transform 0.35s ease;
+      }
+      
+    &__heart-fill {
+        position: absolute;
+        inset: 0;
+        @include gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform 0.35s ease;
+    }
+      
+    &__fa-heart-wrap:hover &__heart-fill {
+        transform: scale(1);
+    }
+
+    &__fa-heart-wrap:hover &__heart-outline {
+        transform: scale(0);
     }
 }

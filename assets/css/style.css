@@ -327,8 +327,31 @@ body {
   flex-direction: column;
   gap: 0.3125rem;
 }
-.restaurants__like-icon {
+.restaurants__fa-heart-wrap {
+  position: relative;
+  display: inline-block;
   font-size: 22px;
+  cursor: pointer;
+}
+.restaurants__heart-outline {
+  color: #000000;
+  transition: transform 0.35s ease;
+}
+.restaurants__heart-fill {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+.restaurants__fa-heart-wrap:hover .restaurants__heart-fill {
+  transform: scale(1);
+}
+.restaurants__fa-heart-wrap:hover .restaurants__heart-outline {
+  transform: scale(0);
 }
 
 /*# sourceMappingURL=style.css.map */
