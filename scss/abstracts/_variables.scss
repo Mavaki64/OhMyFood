@@ -45,14 +45,18 @@ $gap-6xl: rem(29);
 
 // Paddings
 $padding-logo: rem(14) 0 rem(13) 0;
-$padding-hero: 2.4375rem 0 3.5625rem 0;
-$padding-steps: 3rem 1.25rem 4.25rem 1.25rem;
-$padding-restaurants: 3.375rem 1.125rem 4.125rem 1.0625rem;
-$padding-footer: 1.375rem 0 1.375rem 1.5625rem;
-$padding-card-content: 1rem 1.5625rem 0.75rem 0.8125rem;
+$padding-hero: rem(39) 0 rem(57) 0;
+$padding-steps: rem(48) rem(20) rem(67) rem(20);
+$padding-restaurants: rem(54) rem(18) rem(66) rem(17);
+$padding-footer: rem(22) 0 rem(22) rem(25);
+$padding-card-content: rem(16) rem(24) rem(12) rem(13);
 
 // Positions
 $position-badge-top: 13px;
 $position-badge-right: 12px;
 $position-image-top: -57px;
 $position-wrapper-left: 12px;
+
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
