@@ -52,7 +52,7 @@
 @include tablet{
     .footer{
         
-        padding: rem(57) rem(25) rem(25) 0;
+        padding: $padding-footer-tablet;
 
         &__wrapper{
             flex-direction: row-reverse;

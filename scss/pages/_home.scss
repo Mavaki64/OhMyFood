@@ -92,7 +92,7 @@
 @include tablet {
     .steps{
         gap: rem(25);
-        padding: rem(49) rem(35) rem(67) rem(35);
+        padding: $padding-steps-tablet;
 
         &__list{
             align-items: flex-start;
@@ -116,7 +116,7 @@
 
     .restaurants{
         gap: rem(28);
-        padding: rem(54) rem(35) rem(66) rem(35);
+        padding: $padding-restaurants-tablet;
 
         &__list{
             align-items: flex-start;
