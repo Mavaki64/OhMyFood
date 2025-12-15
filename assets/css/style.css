@@ -512,13 +512,15 @@ body {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 674px;
   }
   .steps__card {
     flex: 1 1 252px;
-    max-width: 100%;
+    max-width: 325px;
   }
   .steps__wrapper {
     width: 100%;
+    max-width: 674px;
   }
   .restaurants {
     gap: 1.75rem;
@@ -531,8 +533,10 @@ body {
     gap: 10;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 698px;
   }
   .restaurants__wrapper {
+    max-width: 688px;
     width: 100%;
   }
 }

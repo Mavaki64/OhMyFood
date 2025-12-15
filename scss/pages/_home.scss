@@ -99,15 +99,18 @@
             @include flex-row(24px);
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 674px;
+
         }
 
         &__card{
             flex: 1 1 252px;
-            max-width: 100%;
+            max-width: 325px;
         }
 
         &__wrapper{
             width: 100%;
+            max-width: 674px;
         }
     }
 
@@ -120,9 +123,11 @@
             @include flex-row(10);
             flex-wrap: wrap;
             justify-content: space-between;
+            max-width: 698px;
         }
 
         &__wrapper{
+            max-width: 688px;
             width: 100%;
         }
     }
