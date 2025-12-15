@@ -1,0 +1,163 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+@use "../abstracts/functions" as *;
+
+.steps{
+    &__card{
+        position: relative;
+        width: 100%;
+        max-width: 335px;
+        @include flex-row-center;
+        min-height: 4.5625rem;
+    }
+
+    &__number{
+        @extend %position-relative-z;
+        @include flex-center;
+        width: rem(24);
+        height: 1.5rem;
+        border-radius: $radius-medium;
+        background-color: $primary-color;
+        @extend .paragraph;
+        @extend .paragraph--small;
+        @extend .paragraph--white;
+    }
+
+    &__icon{
+        @extend .paragraph--lightgray;
+    }
+
+    &__label{
+        @extend .paragraph;
+        @extend .paragraph--medium;
+    }
+
+    &__card-wrapper{
+        @include flex-row-center;
+        gap: $gap-4xl;
+        border-radius: $radius-xl;
+        background-color: $primary-background;
+        box-shadow: $shadow-card;
+        position: absolute;
+        left: $position-wrapper-left;
+        right: 0;
+        height: 100%;
+        padding-left: 2.1875rem;
+    }
+}
+
+.restaurants{
+    &__card{
+        width: 340px;
+        min-height: 15.6875rem;
+        border-radius: $radius-large;
+        background-color: $secondary-background;
+    }
+
+    &__image-container{
+        overflow: hidden;
+        position: relative;
+        height: calc(#{rem(231)} - #{rem(57)});
+        border-top-left-radius: $radius-large;
+        border-top-right-radius: $radius-large;
+    }
+
+    &__image{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: rem(231);
+        top: $position-image-top;
+    }
+
+    &__badge{
+        @extend %position-absolute-z;
+        top : $position-badge-top;
+        right: $position-badge-right;
+        width: auto;
+        min-width: rem(80);
+        min-height: 1.8125rem;
+        border-radius: $radius-small;
+        box-shadow: $shadow-light;
+        background-color: $tertiary-color;
+        color: $tertiary-font-color;
+        @include flex-center;
+        @extend %reset-margin;
+    }
+
+    &__card-content{
+        @include flex-row-center;
+        justify-content: space-between;
+        padding: $padding-card-content;
+    }
+
+    &__card-info{
+        @include flex-column($gap-xs);
+    }
+
+    &__card-title{
+        @extend .title;
+        @extend .title--small-bold;
+        @extend .title--roboto;
+    }
+
+    &__card-text{
+        @extend .paragraph;
+        @extend .paragraph--large;
+    }
+
+    &__fa-heart-wrap {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    &__heart-checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
+
+    &__heart-outline {
+        color: $color-black;
+        transition: transform 0.35s ease;
+      }
+      
+    &__heart-fill {
+        position: absolute;
+        inset: 0;
+        @include gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform 0.35s ease;
+    }
+      
+    &__heart-checkbox:checked ~ &__heart-fill {
+        transform: scale(1);
+    }
+
+    &__heart-checkbox:checked ~ &__heart-outline {
+        transform: scale(0);
+    }
+
+    &__fa-heart-wrap:hover &__heart-outline {
+        opacity: 0.7;
+    }
+    
+    &__heart-checkbox:checked ~ &__heart-outline {
+        opacity: 0;
+    }
+
+    @include desktop{
+        &__card{
+            flex: 1 1 442px;
+        }
+    }
+}

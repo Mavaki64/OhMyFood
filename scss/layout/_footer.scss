@@ -1,0 +1,99 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholders" as *;
+@use "../base/typography" as *;
+@use "../abstracts/functions" as *;
+
+.footer{
+    background-color: $color-dark-gray;
+    padding: $padding-footer;
+    @include flex-column-start;
+    
+    align-items: center;
+
+    &__wrapper{
+        width: 340px;
+        @include flex-column-start;
+        justify-content: space-between;
+        gap: $gap-xl;
+    }
+
+    &__logo{
+        @extend .title;
+        @extend .title--shrikhand;
+        @extend .title--small;
+        @extend .title--white;
+    }
+
+    &__list{
+        @include flex-column($gap-sm);
+        list-style: none;
+        @extend %reset-margin;
+        padding: 0;
+    }
+
+    &__link{
+        @include flex-row($gap-lg);
+        @extend .link;
+        @extend .link--medium;
+        @extend .link--white;
+        @extend .link--no-decoration;
+
+        &--bold{
+            @include flex-row($gap-lg);
+            @extend .link;
+            @extend .link--medium-bold;
+            @extend .link--white;
+            @extend .link--no-decoration;
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        
+        padding: $padding-footer-tablet;
+
+        &__wrapper{
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        &__list{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        &__menu{
+            flex: 1;
+        }
+    }
+}
+
+@include desktop{
+    .footer {
+        padding: $padding-footer-desktop;
+
+        &__wrapper{
+            width: none;
+        }
+
+        &__list{
+            justify-content: flex-end;
+        }
+
+        &__item{
+            &:nth-child(1),
+            &:nth-child(2){
+                width: 190px;
+            }
+            
+            &:nth-child(3),
+            &:nth-child(4){
+                width: 130px;
+            }
+        }
+    }
+}

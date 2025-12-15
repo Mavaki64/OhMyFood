@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+@use "../abstracts/functions" as *;
+
+.site-header{
+
+    &__logo-container{
+        @extend %position-relative-z;
+        @include flex-center;
+        box-shadow: $shadow-light;
+    }
+    
+    &__logo{
+        height: rem(36);
+        width: rem(197);
+        padding: $padding-logo;
+    }
+
+    &__location-container{
+        height: rem(50);
+        @include flex-row($gap-2xl);
+        align-items: center;
+        justify-content: center;
+        background-color: $tertiary-background;
+        box-shadow: $shadow-medium;
+    }
+
+    &__icon{
+        @extend .paragraph--gray;
+    }
+
+    &__location{
+        @include paragraph-medium-gray;
+    }
+
+    @include desktop{
+        .site-header{
+            &__logo{
+                height: rem(34.2);
+                width: rem(200);
+                padding: $padding-logo-desktop;
+            }
+        }
+    }
+}

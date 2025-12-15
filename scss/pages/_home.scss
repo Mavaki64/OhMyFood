@@ -1,0 +1,186 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+@use "../abstracts/functions" as *;
+
+.hero{
+    @include flex-column-center;
+    text-align: center;
+    gap: $gap-6xl;
+    padding: $padding-hero;
+
+    &__wrapper{
+        @include flex-column($gap-md);
+    }
+
+    &__title{
+        @include title-hero;
+    }
+
+    &__text{
+        @extend .paragraph;
+        @extend .paragraph--xlarge;
+        @extend .paragraph--gray;
+    }
+
+    &__button{
+        width: 100%;
+        max-width: 218px;
+    }
+
+    @include tablet {
+
+        &__title{
+            font-size: rem(34);
+        }
+    }
+}
+
+.steps{
+    padding: $padding-steps;
+    @include flex-column($gap-5xl);
+    background-color: $secondary-background;
+    align-items: center;
+
+    &__list{
+        @include flex-column($gap-5xl);
+        width: 100%;
+        align-items: center
+    }
+
+    &__title{
+        @include title-section;
+    }
+
+    &__wrapper{
+        width: 335px;
+    }
+
+    &__icon--purple{
+        color: $primary-color;
+    }
+}
+
+
+.restaurants{
+    padding: $padding-restaurants;
+    @include flex-column($gap-3xl);
+    align-items: center;
+
+    &__list{
+        width: 100%;
+        @include flex-column($gap-3xl);
+        align-items: center;
+    }
+
+    &__title{
+        @include title-section;
+    }
+
+    &__wrapper{
+        width: 340px;
+    }
+}
+
+@include tablet {
+    .steps{
+        gap: $gap-xl-tablet;
+
+        &__list{
+            align-items: flex-start;
+            @include flex-row($gap-l-tablet);
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 674px;
+
+        }
+
+        &__card{
+            max-width: 325px;
+        }
+
+        &__wrapper{
+            width: 100%;
+            max-width: 674px;
+        }
+    }
+
+    .restaurants{
+        gap: rem($gap-2xl-tablet);
+
+        &__list{
+            align-items: flex-start;
+            @include flex-row($gap-s-tablet);
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 698px;
+        }
+
+        &__wrapper{
+            max-width: 688px;
+            width: 100%;
+        }
+    }
+}
+
+@include desktop{
+    .hero{
+        padding: $padding-hero-desktop;
+        gap: $gap-3xl;
+
+        &__title{
+            font-size: rem(40);
+        }
+
+        &__text{
+            padding: rem(12) 0 rem(12) 0;
+        }
+
+        &__wrapper{
+            gap: $gap-3xl;
+        }
+    }
+
+    .steps{
+        padding: $padding-steps-desktop;
+
+        &__list{
+            max-width: 1080px;
+            justify-content: flex-start;
+
+        }
+
+        &__wrapper{
+            max-width: 1080px;
+        }
+
+        &__card{
+            flex: 1 1 310px;
+            max-width: 335px;
+        }
+    }
+
+    .restaurants{
+        padding: $padding-restaurants-desktop;
+
+        &__list{
+            max-width: 1080px;
+            row-gap: 50px;
+            column-gap: 100px;
+            justify-content: flex-start;
+        }
+
+        &__link{
+            display: flex;
+            flex: 1 1 442px;
+        }
+
+        &__wrapper{
+            max-width: 1080px;
+        }
+        
+        &__card-content{
+            padding: $padding-card-content-desktop;
+        }
+    }
+}

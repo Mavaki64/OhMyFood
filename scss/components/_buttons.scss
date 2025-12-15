@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.btn{
+    min-height: 3.125rem;
+    font-family: "Roboto", sans-serif;
+    border-radius: $radius-button;
+    border: none;
+    outline: none;
+    color: $color-white;
+    box-shadow: $shadow-button;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &--primary{
+        @include gradient($primary-color, $secondary-color, 0deg);
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        @include lighten-gradient($primary-color, $secondary-color, 0deg, 5%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    &:active{
+        outline: none;
+        scale: (0.98);
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.35);
+    }
+}

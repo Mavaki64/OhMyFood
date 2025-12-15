@@ -1,0 +1,94 @@
+@use "sass:color";
+@use "functions" as *;
+@use "variables" as *;
+
+// Mixins gradients
+@mixin gradient($color1, $color2, $angle: 180deg) {
+  background: linear-gradient($angle, $color1, $color2);
+}
+
+@mixin fillgradient($color1, $color2, $angle: 180deg) {
+  color: linear-gradient($angle, $color1, $color2);
+}
+
+@mixin lighten-gradient($color1, $color2, $angle: 180deg, $light-percent: 15%) {
+  background: linear-gradient($angle, color.adjust($color1, $lightness: $light-percent), color.adjust($color2, $lightness: $light-percent));
+}
+
+// Mixins flexbox
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-column-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column($gap: null) {
+    display: flex;
+    flex-direction: column;
+    @if $gap{
+        gap: $gap;
+    }
+}
+
+@mixin flex-row($gap: null) {
+    display: flex;
+    flex-direction: row;
+    @if $gap{
+        gap: $gap;
+    }
+}
+
+// Mixins typographiques
+@mixin title-section {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(24);
+    font-weight: 700;
+    margin: 0;
+}
+
+@mixin title-hero {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(24);
+    font-weight: 700;
+    text-wrap: pretty;
+    margin: 0;
+}
+
+@mixin paragraph-medium-gray {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(16);
+    font-weight: 500;
+    color: $color-dark-gray;
+    margin: 0;
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+// Mixin pour media queries desktop
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}

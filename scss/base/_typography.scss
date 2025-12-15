@@ -1,0 +1,107 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/functions" as *;
+
+.title{
+
+    @extend %reset-margin;
+
+    &--roboto{
+        font-family: "Roboto", sans-serif;
+    }
+
+    &--shrikhand{
+        font-family: "Shrikhand", sans-serif;
+    }
+
+    &--small{
+        font-size: rem(18);
+        font-weight: 400;
+    }
+
+    &--small-bold{
+        font-size: rem(18);
+        font-weight: 700;
+    }
+
+    &--medium{
+        font-size: rem(24);
+        font-weight: 700;
+    }
+
+    &--wrap-pretty{
+        text-wrap: pretty;
+    }
+
+    &--white{
+        color: $color-white;
+    }
+}
+
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    @extend %reset-margin;
+    &--small{
+        font-size: rem(14);
+        font-weight: 500;
+    }
+
+    &--medium{
+        font-size: rem(16);
+        font-weight: 500;
+    }
+
+    &--large{
+        font-size: rem(17);
+        font-weight: 300;
+    }
+
+    &--xlarge{
+        font-size: rem(18);
+        font-weight: 300;
+    }
+
+    &--xlarge-bold{
+        font-size: rem(18);
+        font-weight: 700;
+    }
+
+    &--white{
+        color: $color-white;
+    }
+
+    &--gray{
+        color: $color-dark-gray;
+    }
+
+    &--lightgray{
+        color: $color-light-gray;
+    }
+}
+
+.link{
+    font-family: "Roboto", sans-serif;
+    @extend %reset-margin;
+
+    &--black{
+        color: $color-black;
+    }
+
+    &--white{
+        color: $color-white;
+    }
+
+    &--no-decoration{
+        text-decoration: none;
+    }
+
+    &--medium-bold{
+        font-size: rem(16);
+        font-weight: 500;
+    }
+
+    &--medium{
+        font-size: rem(16);
+        font-weight: 400;
+    }
+}

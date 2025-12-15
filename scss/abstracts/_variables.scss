@@ -1,0 +1,76 @@
+@use "functions" as *;
+
+$color-light-blue: #89C8FA;
+$color-blue: #003A68;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-dark-gray: rgb(53, 53, 53);
+$color-light-gray: rgb(126, 126, 126);
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+$tertiary-font-color: #008766;
+
+// Backgrounds
+$primary-background : rgb(246, 246, 246);
+$secondary-background: rgb(255, 255, 255);
+$tertiary-background: rgb(234, 234, 234);
+
+// Shadows
+$shadow-light: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-button: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+$shadow-card: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+// Radius
+$radius-small: 2px;
+$radius-medium: 12px;
+$radius-large: 15px;
+$radius-xl: 20px;
+$radius-button: 25px;
+
+// Gaps
+$gap-xs: rem(5);
+$gap-sm: rem(7);
+$gap-md: rem(10);
+$gap-lg: rem(11);
+$gap-xl: rem(16);
+$gap-2xl: rem(17);
+$gap-3xl: rem(18);
+$gap-4xl: rem(20);
+$gap-5xl: rem(26);
+$gap-6xl: rem(29);
+
+$gap-s-tablet: rem(10);
+$gap-l-tablet: rem(24);
+$gap-xl-tablet: rem(25);
+$gap-2xl-tablet: rem(28);
+
+// Paddings
+$padding-logo: rem(14) 0 rem(13) 0;
+$padding-hero: rem(39) 0 rem(57) 0;
+$padding-steps: rem(48) rem(20) rem(67) rem(20);
+$padding-restaurants: rem(54) rem(18) rem(66) rem(17);
+$padding-footer: rem(22) 0 rem(22) rem(25);
+$padding-card-content: rem(16) rem(24) rem(12) rem(13);
+
+$padding-footer-tablet: rem(57) rem(25) rem(25) 0;
+
+$padding-logo-desktop: rem(30) 0 rem(31.8) 0;
+$padding-hero-desktop: rem(30) 0 rem(30) 0;
+$padding-steps-desktop: rem(50) rem(20) rem(50) rem(20);
+$padding-restaurants-desktop : rem(30) rem(20) rem(30) rem(20);
+$padding-card-content-desktop: rem(16) rem(25) rem(12) rem(18.74);
+$padding-footer-desktop: rem(57) rem(25) rem(30) 0;
+
+// Positions
+$position-badge-top: 13px;
+$position-badge-right: 12px;
+$position-image-top: -57px;
+$position-wrapper-left: 12px;
+
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
