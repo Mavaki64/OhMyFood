@@ -139,6 +139,13 @@ body {
   color: rgb(53, 53, 53);
   margin: 0;
 }
+@media (min-width: 1024px) {
+  .site-header .site-header__logo {
+    height: 2.1375rem;
+    width: 12.5rem;
+    padding: 1.875rem 0 1.9875rem 0;
+  }
+}
 
 .footer {
   background-color: rgb(53, 53, 53);

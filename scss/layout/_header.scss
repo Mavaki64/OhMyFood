@@ -34,4 +34,14 @@
     &__location{
         @include paragraph-medium-gray;
     }
+
+    @include desktop{
+        .site-header{
+            &__logo{
+                height: rem(34.2);
+                width: rem(200);
+                padding: $padding-logo-desktop;
+            }
+        }
+    }
 }
