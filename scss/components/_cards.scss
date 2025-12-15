@@ -68,8 +68,10 @@
 
     &__image{
         position: absolute;
-        width: 100%;
         object-fit: cover;
+        width: 100%;
+        height: rem(231);
+        top: $position-image-top;
     }
 
     &__badge{
