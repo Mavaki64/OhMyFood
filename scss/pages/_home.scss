@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @use "../base/typography" as *;
+@use "../abstracts/functions" as *;
 
 .hero{
     @include flex-column-center;
@@ -26,6 +27,20 @@
         width: 100%;
         max-width: 218px;
     }
+
+    @include tablet {
+
+        &__title{
+            font-size: rem(34);
+        }
+    }
+
+    @include desktop {
+        &__title{
+            font-size: rem(40);
+        }
+    }
+
 }
 
 .steps{
@@ -53,6 +68,7 @@
     }
 }
 
+
 .restaurants{
     padding: $padding-restaurants;
     @include flex-column($gap-3xl);
@@ -70,5 +86,44 @@
 
     &__wrapper{
         width: 340px;
+    }
+}
+
+@include tablet {
+    .steps{
+        gap: rem(25);
+        padding: rem(49) rem(35) rem(67) rem(35);
+
+        &__list{
+            align-items: flex-start;
+            @include flex-row(24px);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card{
+            flex: 1 1 252px;
+            max-width: 100%;
+        }
+
+        &__wrapper{
+            width: 100%;
+        }
+    }
+
+    .restaurants{
+        gap: rem(28);
+        padding: rem(54) rem(35) rem(66) rem(35);
+
+        &__list{
+            align-items: flex-start;
+            @include flex-row(10);
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        &__wrapper{
+            width: 100%;
+        }
     }
 }

@@ -347,7 +347,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5625rem 0.75rem 0.8125rem;
+  padding: 1rem 1.5rem 0.75rem 0.8125rem;
 }
 .restaurants__card-info {
   display: flex;
@@ -418,9 +418,19 @@ body {
   width: 100%;
   max-width: 218px;
 }
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
 
 .steps {
-  padding: 3rem 1.25rem 4.25rem 1.25rem;
+  padding: 3rem 1.25rem 4.1875rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.625rem;
@@ -469,6 +479,43 @@ body {
 }
 .restaurants__wrapper {
   width: 340px;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    gap: 1.5625rem;
+    padding: 3.0625rem 2.1875rem 4.1875rem 2.1875rem;
+  }
+  .steps__list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .steps__card {
+    flex: 1 1 252px;
+    max-width: 100%;
+  }
+  .steps__wrapper {
+    width: 100%;
+  }
+  .restaurants {
+    gap: 1.75rem;
+    padding: 3.375rem 2.1875rem 4.125rem 2.1875rem;
+  }
+  .restaurants__list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 10;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .restaurants__wrapper {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
