@@ -50,9 +50,7 @@
 
 .restaurants{
     &__card{
-        width: 100%;
-        min-width: 340px;
-        max-width: 340px;
+        width: 340px;
         min-height: 15.6875rem;
         border-radius: $radius-large;
         background-color: $secondary-background;
@@ -155,5 +153,11 @@
     
     &__heart-checkbox:checked ~ &__heart-outline {
         opacity: 0;
+    }
+
+    @include desktop{
+        &__card{
+            flex: 1 1 442px;
+        }
     }
 }

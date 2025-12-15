@@ -335,9 +335,7 @@ body {
 }
 
 .restaurants__card {
-  width: 100%;
-  min-width: 340px;
-  max-width: 340px;
+  width: 340px;
   min-height: 15.6875rem;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
@@ -421,6 +419,11 @@ body {
 .restaurants__heart-checkbox:checked ~ .restaurants__heart-outline {
   opacity: 0;
 }
+@media (min-width: 1024px) {
+  .restaurants__card {
+    flex: 1 1 442px;
+  }
+}
 
 .hero {
   display: flex;
@@ -449,11 +452,6 @@ body {
 @media (min-width: 768px) {
   .hero__title {
     font-size: 2.125rem;
-  }
-}
-@media (min-width: 1024px) {
-  .hero__title {
-    font-size: 2.5rem;
   }
 }
 
@@ -512,7 +510,6 @@ body {
 @media (min-width: 768px) {
   .steps {
     gap: 1.5625rem;
-    padding: 3.0625rem 2.1875rem 4.1875rem 2.1875rem;
   }
   .steps__list {
     align-items: flex-start;
@@ -524,7 +521,6 @@ body {
     max-width: 674px;
   }
   .steps__card {
-    flex: 1 1 252px;
     max-width: 325px;
   }
   .steps__wrapper {
@@ -533,7 +529,6 @@ body {
   }
   .restaurants {
     gap: calc(0.109375rem * 1rem);
-    padding: 3.375rem 2.1875rem 4.125rem 2.1875rem;
   }
   .restaurants__list {
     align-items: flex-start;
@@ -547,6 +542,54 @@ body {
   .restaurants__wrapper {
     max-width: 688px;
     width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding: 1.875rem 0 1.875rem 0;
+    gap: 1.125rem;
+  }
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  .hero__text {
+    padding: 0.75rem 0 0.75rem 0;
+  }
+  .hero__wrapper {
+    gap: 1.125rem;
+  }
+  .steps {
+    padding: 3.125rem 1.25rem 3.125rem 1.25rem;
+  }
+  .steps__list {
+    max-width: 1080px;
+    justify-content: flex-start;
+  }
+  .steps__wrapper {
+    max-width: 1080px;
+  }
+  .steps__card {
+    flex: 1 1 310px;
+    max-width: 335px;
+  }
+  .restaurants {
+    padding: 1.875rem 1.25rem 1.875rem 1.25rem;
+  }
+  .restaurants__list {
+    max-width: 1080px;
+    row-gap: 50px;
+    column-gap: 100px;
+    justify-content: flex-start;
+  }
+  .restaurants__link {
+    display: flex;
+    flex: 1 1 442px;
+  }
+  .restaurants__wrapper {
+    max-width: 1080px;
+  }
+  .restaurants__card-content {
+    padding: 1rem 1.5625rem 0.75rem 1.17125rem;
   }
 }
 

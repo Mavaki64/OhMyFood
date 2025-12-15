@@ -34,13 +34,6 @@
             font-size: rem(34);
         }
     }
-
-    @include desktop {
-        &__title{
-            font-size: rem(40);
-        }
-    }
-
 }
 
 .steps{
@@ -92,7 +85,6 @@
 @include tablet {
     .steps{
         gap: $gap-xl-tablet;
-        padding: $padding-steps-tablet;
 
         &__list{
             align-items: flex-start;
@@ -104,7 +96,6 @@
         }
 
         &__card{
-            flex: 1 1 252px;
             max-width: 325px;
         }
 
@@ -116,7 +107,6 @@
 
     .restaurants{
         gap: rem($gap-2xl-tablet);
-        padding: $padding-restaurants-tablet;
 
         &__list{
             align-items: flex-start;
@@ -129,6 +119,68 @@
         &__wrapper{
             max-width: 688px;
             width: 100%;
+        }
+    }
+}
+
+@include desktop{
+    .hero{
+        padding: $padding-hero-desktop;
+        gap: $gap-3xl;
+
+        &__title{
+            font-size: rem(40);
+        }
+
+        &__text{
+            padding: rem(12) 0 rem(12) 0;
+        }
+
+        &__wrapper{
+            gap: $gap-3xl;
+        }
+    }
+
+    .steps{
+        padding: $padding-steps-desktop;
+
+        &__list{
+            max-width: 1080px;
+            justify-content: flex-start;
+
+        }
+
+        &__wrapper{
+            max-width: 1080px;
+        }
+
+        &__card{
+            flex: 1 1 310px;
+            max-width: 335px;
+        }
+    }
+
+    .restaurants{
+        padding: $padding-restaurants-desktop;
+
+        &__list{
+            max-width: 1080px;
+            row-gap: 50px;
+            column-gap: 100px;
+            justify-content: flex-start;
+        }
+
+        &__link{
+            display: flex;
+            flex: 1 1 442px;
+        }
+
+        &__wrapper{
+            max-width: 1080px;
+        }
+        
+        &__card-content{
+            padding: $padding-card-content-desktop;
         }
     }
 }
