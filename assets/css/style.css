@@ -183,7 +183,7 @@ body {
     width: 100%;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 16px;
+    gap: 1rem;
   }
   .footer__list {
     flex-direction: row;
@@ -509,7 +509,7 @@ body {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 674px;
@@ -523,14 +523,14 @@ body {
     max-width: 674px;
   }
   .restaurants {
-    gap: 1.75rem;
+    gap: calc(0.109375rem * 1rem);
     padding: 3.375rem 2.1875rem 4.125rem 2.1875rem;
   }
   .restaurants__list {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    gap: 10;
+    gap: 0.625rem;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 698px;

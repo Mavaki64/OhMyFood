@@ -91,12 +91,12 @@
 
 @include tablet {
     .steps{
-        gap: rem(25);
+        gap: $gap-xl-tablet;
         padding: $padding-steps-tablet;
 
         &__list{
             align-items: flex-start;
-            @include flex-row(24px);
+            @include flex-row($gap-l-tablet);
             flex-wrap: wrap;
             justify-content: center;
             max-width: 674px;
@@ -115,12 +115,12 @@
     }
 
     .restaurants{
-        gap: rem(28);
+        gap: rem($gap-2xl-tablet);
         padding: $padding-restaurants-tablet;
 
         &__list{
             align-items: flex-start;
-            @include flex-row(10);
+            @include flex-row($gap-s-tablet);
             flex-wrap: wrap;
             justify-content: space-between;
             max-width: 698px;
