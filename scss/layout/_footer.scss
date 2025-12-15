@@ -59,7 +59,6 @@
             width: 100%;
             justify-content: flex-start;
             align-items: flex-end;
-            gap: $gap-m-tablet;
         }
 
         &__list{
@@ -69,6 +68,32 @@
 
         &__menu{
             flex: 1;
+        }
+    }
+}
+
+@include desktop{
+    .footer {
+        padding: $padding-footer-desktop;
+
+        &__wrapper{
+            width: none;
+        }
+
+        &__list{
+            justify-content: flex-end;
+        }
+
+        &__item{
+            &:nth-child(1),
+            &:nth-child(2){
+                width: 190px;
+            }
+            
+            &:nth-child(3),
+            &:nth-child(4){
+                width: 130px;
+            }
         }
     }
 }

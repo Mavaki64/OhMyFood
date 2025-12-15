@@ -190,7 +190,6 @@ body {
     width: 100%;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 1rem;
   }
   .footer__list {
     flex-direction: row;
@@ -198,6 +197,23 @@ body {
   }
   .footer__menu {
     flex: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding: 3.5625rem 1.5625rem 1.875rem 0;
+  }
+  .footer__wrapper {
+    width: none;
+  }
+  .footer__list {
+    justify-content: flex-end;
+  }
+  .footer__item:nth-child(1), .footer__item:nth-child(2) {
+    width: 190px;
+  }
+  .footer__item:nth-child(3), .footer__item:nth-child(4) {
+    width: 130px;
   }
 }
 .loader {
