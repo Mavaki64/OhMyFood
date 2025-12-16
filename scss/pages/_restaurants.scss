@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+@use "../abstracts/functions" as *;
+@use "../abstracts/placeholders" as *;
+
+.restaurant-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__wrapper{
+        width: 100%;
+        position: relative;
+    }
+
+    
+    &__image{
+        z-index: -1;
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+    }
+}
+
+.restaurant-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+    &__wrapper{
+        width: 100%;
+        max-width: 1055px;
+        position: relative;
+        @include flex-column-center();
+        border-top-right-radius: $radius-xxl;
+        border-top-left-radius: $radius-xxl;
+        background-color: $primary-background;
+        @extend %position-absolute-z;
+        top: rem(-55);
+        padding: $padding-restaurant-menu;
+        @include flex-column($gap-l-restaurant);
+    }
+
+    &__header{
+        width: 100%;
+        @include flex-row-center;
+        gap: $gap-m-restaurant;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title{
+        @extend .title;
+        @extend .title--shrikhand;
+        @extend .title--large;
+    }
+
+    &__categories{
+        width: 100%;
+        @include flex-column($gap-s-restaurant);
+        align-items: flex-start;
+    }
+
+    &__category-title{
+        @extend .title;
+        @extend .title--roboto;
+        @extend .title--medium;
+    }
+}

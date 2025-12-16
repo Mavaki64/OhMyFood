@@ -29,6 +29,11 @@
         font-weight: 700;
     }
 
+    &--large{
+        font-size: rem(28);
+        font-weight: 400;
+    }
+
     &--wrap-pretty{
         text-wrap: pretty;
     }

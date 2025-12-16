@@ -161,3 +161,18 @@
         }
     }
 }
+
+.menu-card{
+    width: 100%;
+    min-height: rem(69);
+    border-radius: $radius-large;
+    padding: $padding-menu-card;
+    background-color: $secondary-background;
+    box-shadow: $shadow-card;
+    @include flex-row-center;
+    justify-content: space-between;
+
+    &__text{
+        @include flex-column($gap-xs);
+    }
+}

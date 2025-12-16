@@ -29,6 +29,7 @@ $radius-small: 2px;
 $radius-medium: 12px;
 $radius-large: 15px;
 $radius-xl: 20px;
+$radius-xxl: 40px;
 $radius-button: 25px;
 
 // Gaps
@@ -42,6 +43,10 @@ $gap-3xl: rem(18);
 $gap-4xl: rem(20);
 $gap-5xl: rem(26);
 $gap-6xl: rem(29);
+
+$gap-s-restaurant: rem(12);
+$gap-m-restaurant: rem(24);
+$gap-l-restaurant: rem(40);
 
 $gap-s-tablet: rem(10);
 $gap-l-tablet: rem(24);
@@ -64,6 +69,9 @@ $padding-steps-desktop: rem(50) rem(20) rem(50) rem(20);
 $padding-restaurants-desktop : rem(30) rem(20) rem(30) rem(20);
 $padding-card-content-desktop: rem(16) rem(25) rem(12) rem(18.74);
 $padding-footer-desktop: rem(57) rem(25) rem(30) 0;
+
+$padding-restaurant-menu: rem(32) rem(17) rem(40) rem(17);
+$padding-menu-card: rem(12) rem(15) rem(12) rem(15);
 
 // Positions
 $position-badge-top: 13px;
