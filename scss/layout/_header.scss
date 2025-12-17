@@ -55,6 +55,10 @@
                 width: rem(200);
                 padding: $padding-logo-desktop;
             }
+
+            &__arrow-link{
+                top: 33px;
+            }
         }
     }
 }

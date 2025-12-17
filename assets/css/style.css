@@ -185,6 +185,9 @@ body {
     width: 12.5rem;
     padding: 1.875rem 0 1.9875rem 0;
   }
+  .site-header .site-header__arrow-link {
+    top: 33px;
+  }
 }
 
 .footer {
@@ -755,7 +758,7 @@ body {
 .restaurant-hero__image {
   z-index: -1;
   object-fit: cover;
-  height: 275px;
+  height: 17.1875rem;
   width: 100%;
 }
 
@@ -780,6 +783,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  align-items: center;
 }
 .restaurant-menu__header {
   width: 21.3125rem;
@@ -846,7 +850,6 @@ body {
   }
   .restaurant-menu__wrapper {
     max-width: 48rem;
-    align-items: center;
   }
   .restaurant-menu__categories {
     align-items: center;
@@ -866,6 +869,9 @@ body {
   .restaurant-menu__category-title-wrapper {
     width: 100%;
     max-width: 39.625rem;
+  }
+  .restaurant-hero__image {
+    height: 23.9375rem;
   }
 }
 
