@@ -43,6 +43,10 @@ body {
 .title--shrikhand, .restaurant-menu__title, .footer__logo {
   font-family: "Shrikhand", sans-serif;
 }
+.title--extra-small, .restaurant-menu__category-title {
+  font-size: 1rem;
+  font-weight: 300;
+}
 .title--small, .footer__logo {
   font-size: 1.125rem;
   font-weight: 400;
@@ -55,7 +59,7 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
 }
-.title--medium, .restaurant-menu__category-title {
+.title--medium {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -578,7 +582,9 @@ body {
 }
 .hero__button {
   width: 100%;
-  max-width: 218px;
+  max-width: 13.625rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .hero__title {
@@ -743,13 +749,14 @@ body {
 .restaurant-menu {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .restaurant-menu__wrapper {
   width: 100%;
-  max-width: 1055px;
+  max-width: 375px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -758,19 +765,21 @@ body {
   border-top-left-radius: 40px;
   background-color: rgb(246, 246, 246);
   top: -3.4375rem;
-  padding: 2rem 1.0625rem 2.5rem 1.0625rem;
+  margin-bottom: -3.4375rem;
+  padding: 2rem 0.8125rem 2.5rem 0.8125rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 .restaurant-menu__header {
-  width: 100%;
+  width: 21.3125rem;
+  padding-right: 1.5rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 .restaurant-menu__categories {
   width: 100%;
@@ -778,6 +787,25 @@ body {
   flex-direction: column;
   gap: 0.75rem;
   align-items: flex-start;
+}
+.restaurant-menu__category-title {
+  height: 1.6875rem;
+  position: relative;
+}
+.restaurant-menu__category-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.restaurant-menu__button {
+  width: 100%;
+  max-width: 11.625rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

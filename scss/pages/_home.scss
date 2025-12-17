@@ -25,7 +25,9 @@
 
     &__button{
         width: 100%;
-        max-width: 218px;
+        max-width: rem(218);
+        font-size: rem(16);
+        font-weight: 500;
     }
 
     @include tablet {
