@@ -33,11 +33,11 @@ body {
   z-index: 1;
 }
 
-.restaurants__badge, .loader__text, .footer__list, .title, .paragraph, .link, .restaurant-menu__title, .restaurant-menu__category-title, .restaurants__card-title, .footer__logo, .hero__text, .steps__number, .steps__label, .restaurants__card-text, .footer__link, .footer__link--bold {
+.restaurants__badge, .loader__text, .footer__list, .title, .paragraph, .link, .restaurant-menu__title, .restaurant-menu__category-title, .restaurants__card-title, .menu-card__title, .footer__logo, .hero__text, .steps__number, .steps__label, .restaurants__card-text, .menu-card__description, .menu-card__price, .footer__link, .footer__link--bold {
   margin: 0;
 }
 
-.title--roboto, .restaurant-menu__category-title, .restaurants__card-title {
+.title--roboto, .restaurant-menu__category-title, .restaurants__card-title, .menu-card__title {
   font-family: "Roboto", sans-serif;
 }
 .title--shrikhand, .restaurant-menu__title, .footer__logo {
@@ -46,6 +46,10 @@ body {
 .title--small, .footer__logo {
   font-size: 1.125rem;
   font-weight: 400;
+}
+.title--small-semibold, .menu-card__title {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 .title--small-bold, .restaurants__card-title {
   font-size: 1.125rem;
@@ -66,12 +70,20 @@ body {
   color: #FFFFFF;
 }
 
-.paragraph, .hero__text, .steps__number, .steps__label, .restaurants__card-text {
+.paragraph, .hero__text, .steps__number, .steps__label, .restaurants__card-text, .menu-card__description, .menu-card__price {
   font-family: "Roboto", sans-serif;
 }
 .paragraph--small, .steps__number {
   font-size: 0.875rem;
   font-weight: 500;
+}
+.paragraph--small2, .menu-card__description {
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+.paragraph--small2-bold, .menu-card__price {
+  font-size: 0.9375rem;
+  font-weight: 700;
 }
 .paragraph--medium, .steps__label {
   font-size: 1rem;
@@ -92,7 +104,7 @@ body {
 .paragraph--white, .steps__number {
   color: #FFFFFF;
 }
-.paragraph--gray, .hero__text, .site-header__icon {
+.paragraph--gray, .hero__text, .menu-card__price, .site-header__icon {
   color: rgb(53, 53, 53);
 }
 .paragraph--lightgray, .steps__icon {
@@ -463,21 +475,85 @@ body {
 }
 
 .menu-card {
-  width: 100%;
-  min-height: 4.3125rem;
+  width: 21.8125rem;
+  height: 4.3125rem;
   border-radius: 15px;
-  padding: 0.75rem 0.9375rem 0.75rem 0.9375rem;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.menu-card__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 0.75rem 0.9375rem 0.75rem 0.9375rem;
+  box-sizing: border-box;
 }
 .menu-card__text {
   display: flex;
   flex-direction: column;
   gap: 0.3125rem;
+  min-width: 0;
+}
+.menu-card__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card__price-wrapper {
+  margin-left: 0.75rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.09375rem;
+  transition: margin-right 0.5s ease;
+  flex-shrink: 0;
+}
+.menu-card__price {
+  text-align: center;
+}
+.menu-card__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6875rem;
+  height: 4.3125rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+.menu-card__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.menu-card__checkbox:checked ~ .menu-card__checkbox-wrapper, label:has(.menu-card__checkbox:checked) .menu-card__checkbox-wrapper {
+  transform: translateX(0);
+}
+.menu-card__checkbox:checked ~ .menu-card__label .menu-card__price-wrapper {
+  margin-right: 3.6875rem;
 }
 
 .hero {

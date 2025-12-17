@@ -163,16 +163,100 @@
 }
 
 .menu-card{
-    width: 100%;
-    min-height: rem(69);
+    
+    width: rem(349);
+    height: rem(69);
     border-radius: $radius-large;
-    padding: $padding-menu-card;
     background-color: $secondary-background;
     box-shadow: $shadow-card;
     @include flex-row-center;
     justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+
+    &__label{
+        display: flex; // ✅ Le label doit être flex pour le layout
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        padding: $padding-menu-card;
+        box-sizing: border-box;
+    }
 
     &__text{
         @include flex-column($gap-xs);
+        min-width: 0;
     }
+
+    &__title{
+        @extend .title;
+        @extend .title--small-semibold;
+        @extend .title--roboto;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+    }
+
+    &__description{
+        @extend .paragraph;
+        @extend .paragraph--small2;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+    }
+
+    &__price-wrapper{
+        margin-left: rem(12);
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: rem(1.5);
+        transition: margin-right 0.5s ease;
+        flex-shrink: 0;
+    }
+
+    &__price{
+        @extend .paragraph;
+        @extend .paragraph--small2-bold;
+        @extend .paragraph--gray;
+        text-align: center;
+    }
+
+    &__checkbox-wrapper{
+        @include flex-center;
+        width: rem(59);
+        height: rem(69);
+        border-top-right-radius: $radius-large;
+        border-bottom-right-radius: $radius-large;
+        background-color: $tertiary-color;
+        color: $color-white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    &__checkbox{
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
+
+    &__checkbox:checked ~ &__checkbox-wrapper,
+    label:has(&__checkbox:checked) &__checkbox-wrapper {
+        transform: translateX(0);
+    }
+
+    &__checkbox:checked ~ &__label &__price-wrapper {
+        margin-right: rem(59);
+    }
+    
 }
