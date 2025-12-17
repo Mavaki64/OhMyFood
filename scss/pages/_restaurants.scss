@@ -36,7 +36,6 @@
         max-width: 375px;
         box-sizing: border-box;
         position: relative;
-        @include flex-column-center();
         border-top-right-radius: $radius-xxl;
         border-top-left-radius: $radius-xxl;
         background-color: $primary-background;
@@ -118,5 +117,45 @@
         max-width: rem(186);
         font-size: rem(16);
         font-weight: 500;
+    }
+}
+
+@include tablet {
+    .restaurant-menu{
+
+        &__header{
+            justify-content: center;
+        }
+
+        &__wrapper{
+            max-width: rem(768);
+            align-items: center;
+        }
+
+        &__categories{
+            align-items: center;
+        }
+
+        &__category-title-wrapper{
+            width: 100%;
+            max-width: rem(500);
+        }
+    }
+}
+
+@include desktop {
+    .restaurant-menu{
+
+        &__wrapper{
+            max-width: rem(1055);
+            padding: $padding-restaurant-menu-desktop;
+            top: rem(-40);
+            margin-bottom: rem(-40);
+        }
+
+        &__category-title-wrapper{
+            width: 100%;
+            max-width: rem(634);
+        }
     }
 }

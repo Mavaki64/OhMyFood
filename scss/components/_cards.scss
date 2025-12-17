@@ -260,3 +260,15 @@
     }
     
 }
+
+@include tablet {
+    .menu-card{
+        width: rem(500);
+    }
+}
+
+@include desktop {
+    .menu-card{
+        width: rem(634);
+    }
+}
