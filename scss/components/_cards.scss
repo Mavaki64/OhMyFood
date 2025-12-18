@@ -5,6 +5,13 @@
 @use "../abstracts/functions" as *;
 
 .steps{
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
     &__card{
         position: relative;
         width: 100%;
@@ -54,6 +61,7 @@
         min-height: 15.6875rem;
         border-radius: $radius-large;
         background-color: $secondary-background;
+        position: relative;
     }
 
     &__image-container{
@@ -62,6 +70,12 @@
         height: calc(#{rem(231)} - #{rem(57)});
         border-top-left-radius: $radius-large;
         border-top-right-radius: $radius-large;
+    }
+
+    &__link{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
     }
 
     &__image{
@@ -113,6 +127,11 @@
         display: inline-block;
         font-size: 22px;
         cursor: pointer;
+        z-index: 2;
+    }
+
+    &__fa-heart-wrap, &__fa-heart-wrap * {
+        pointer-events: auto;
     }
 
     &__heart-checkbox {
@@ -133,7 +152,8 @@
         inset: 0;
         @include gradient($primary-color, $secondary-color);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
         transform: scale(0);
         transform-origin: center;
         transition: transform 0.35s ease;

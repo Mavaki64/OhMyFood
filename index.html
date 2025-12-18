@@ -66,31 +66,31 @@
             <div class="steps__wrapper">
                 <h2 class="steps__title">Fonctionnement</h2>
             </div>
-            <div class="steps__list">
-                <div class="steps__card">
+            <ol class="steps__list">
+                <li class="steps__card">
                     <p class="steps__number">1</p>
                     <div class="steps__card-wrapper">
                         <i class="steps__icon fa-solid fa-mobile-screen-button"></i>
                         <p class="steps__label">Choisissez un restaurants</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="steps__card">
+                <li class="steps__card">
                     <p class="steps__number">2</p>
                     <div class="steps__card-wrapper">
                         <i class="steps__icon fa-solid fa-list-ul"></i>
                         <p class="steps__label">Composez votre menu</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="steps__card">
+                <li class="steps__card">
                     <p class="steps__number">3</p>
                     <div class="steps__card-wrapper">
                         <i class="steps__icon--purple fa-solid fa-store"></i>
                         <p class="steps__label">Dégustez au restaurant</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ol>
         </section>
 
         <section class="restaurants">
@@ -98,95 +98,101 @@
                 <h2 class="restaurants__title">Restaurants</h2>
             </div>
             <div class="restaurants__list">
-                <a href="/restaurants/la-palette-du-gout.html"
-                    class="restaurants__link link--black link--no-decoration">
-                    <div class="restaurants__card">
-                        <div class="restaurants__image-container">
-                            <img src="assets/images/restaurants/jay-wennington-unsplash.jpg"
-                                alt="Photo d'une assiette dressée." class="restaurants__image">
-                            <p class="restaurants__badge">Nouveau</p>
-                        </div>
-                        <div class="restaurants__card-content">
-                            <div class="restaurants__card-info">
-                                <h3 class="restaurants__card-title">La palette du goût</h3>
-                                <p class="restaurants__card-text">Ménilmontant</p>
-                            </div>
-                            <label class="restaurants__fa-heart-wrap">
-                                <input type="checkbox" class="restaurants__heart-checkbox">
-                                <i class="fa-regular fa-heart restaurants__heart-outline"></i>
-                                <i class="fa-solid fa-heart restaurants__heart-fill"></i>
-                            </label>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="/restaurants/la-note-enchantee.html" class="restaurants__link link--black link--no-decoration">
-                    <div class="restaurants__card">
-                        <div class="restaurants__image-container">
-                            <img src="assets/images/restaurants/stil-unsplash.jpg" alt="Photo d'une assiette dressée."
-                                class="restaurants__image">
-                            <p class="restaurants__badge">Nouveau</p>
-                        </div>
-                        <div class="restaurants__card-content">
-                            <div class="restaurants__card-info">
-                                <h3 class="restaurants__card-title">La note enchantée</h3>
-                                <p class="restaurants__card-text">Charonne</p>
-                            </div>
-                            <label class="restaurants__fa-heart-wrap">
-                                <input type="checkbox" class="restaurants__heart-checkbox">
-                                <i class="fa-regular fa-heart restaurants__heart-outline"></i>
-                                <i class="fa-solid fa-heart restaurants__heart-fill"></i>
-                            </label>
-                        </div>
+                <article class="restaurants__card">
+                    <div class="restaurants__image-container">
+                        <img src="assets/images/restaurants/jay-wennington-unsplash.jpg"
+                            alt="Photo d'une assiette dressée." class="restaurants__image">
+                        <p class="restaurants__badge">Nouveau</p>
                     </div>
-                </a>
 
-                <a href="/restaurants/a-la-francaise.html" class="restaurants__link link--black link--no-decoration">
-                    <div class="restaurants__card">
-                        <div class="restaurants__image-container">
-                            <img src="assets/images/restaurants/toa-heftiba-unsplash.jpg"
-                                alt="Photo d'une assiette dressée." class="restaurants__image">
-                        </div>
-                        <div class="restaurants__card-content">
-                            <div class="restaurants__card-info">
-                                <h3 class="restaurants__card-title">À la française</h3>
-                                <p class="restaurants__card-text">Cité Rouge</p>
-                            </div>
-                            <label class="restaurants__fa-heart-wrap">
-                                <input type="checkbox" class="restaurants__heart-checkbox">
-                                <i class="fa-regular fa-heart restaurants__heart-outline"></i>
-                                <i class="fa-solid fa-heart restaurants__heart-fill"></i>
-                            </label>
-                        </div>
-                    </div>
-                </a>
+                    <a href="/restaurants/la-palette-du-gout.html" class="restaurants__link link--black link--no-decoration"></a>
 
-                <a href="/restaurants/le-delice-des-sens.html"
-                    class="restaurants__link link--black link--no-decoration">
-                    <div class="restaurants__card">
-                        <div class="restaurants__image-container">
-                            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-unsplash.jpg"
-                                alt="Photo d'une assiette dressée." class="restaurants__image">
+                    <div class="restaurants__card-content">
+                        <div class="restaurants__card-info">
+                            <h3 class="restaurants__card-title">La palette du goût</h3>
+                            <p class="restaurants__card-text">Ménilmontant</p>
                         </div>
-                        <div class="restaurants__card-content">
-                            <div class="restaurants__card-info">
-                                <h3 class="restaurants__card-title">Le délice des sens</h3>
-                                <p class="restaurants__card-text">Folie-méricourt</p>
-                            </div>
-                            <label class="restaurants__fa-heart-wrap">
-                                <input type="checkbox" class="restaurants__heart-checkbox">
-                                <i class="fa-regular fa-heart restaurants__heart-outline"></i>
-                                <i class="fa-solid fa-heart restaurants__heart-fill"></i>
-                            </label>
-                        </div>
+
+                        <label class="restaurants__fa-heart-wrap">
+                            <input type="checkbox" class="restaurants__heart-checkbox">
+                            <i class="fa-regular fa-heart restaurants__heart-outline"></i>
+                            <i class="fa-solid fa-heart restaurants__heart-fill"></i>
+                        </label>
                     </div>
-                </a>
+                </article>
+
+                <article class="restaurants__card">
+                    <div class="restaurants__image-container">
+                        <img src="assets/images/restaurants/stil-unsplash.jpg"
+                            alt="Photo d'une assiette dressée." class="restaurants__image">
+                        <p class="restaurants__badge">Nouveau</p>
+                    </div>
+
+                    <a href="/restaurants/la-note-enchantee.html" class="restaurants__link link--black link--no-decoration"></a>
+                    
+                    <div class="restaurants__card-content">
+                        <div class="restaurants__card-info">
+                            <h3 class="restaurants__card-title">La note enchantée</h3>
+                            <p class="restaurants__card-text">Charonne</p>
+                        </div>
+
+                        <label class="restaurants__fa-heart-wrap">
+                            <input type="checkbox" class="restaurants__heart-checkbox">
+                            <i class="fa-regular fa-heart restaurants__heart-outline"></i>
+                            <i class="fa-solid fa-heart restaurants__heart-fill"></i>
+                        </label>
+                    </div>
+                </article>
+
+                <article class="restaurants__card">
+                    <div class="restaurants__image-container">
+                        <img src="assets/images/restaurants/toa-heftiba-unsplash.jpg"
+                            alt="Photo d'une assiette dressée." class="restaurants__image">
+                    </div>
+
+                    <a href="/restaurants/a-la-francaise.html" class="restaurants__link link--black link--no-decoration"></a>
+                    
+                    <div class="restaurants__card-content">
+                        <div class="restaurants__card-info">
+                            <h3 class="restaurants__card-title">À la française</h3>
+                            <p class="restaurants__card-text">Cité Rouge</p>
+                        </div>
+
+                        <label class="restaurants__fa-heart-wrap">
+                            <input type="checkbox" class="restaurants__heart-checkbox">
+                            <i class="fa-regular fa-heart restaurants__heart-outline"></i>
+                            <i class="fa-solid fa-heart restaurants__heart-fill"></i>
+                        </label>
+                    </div>
+                </article>
+
+                <article class="restaurants__card">
+                    <div class="restaurants__image-container">
+                        <img src="assets/images/restaurants/louis-hansel-shotsoflouis-unsplash.jpg"
+                            alt="Photo d'une assiette dressée." class="restaurants__image">
+                    </div>
+
+                    <a href="/restaurants/le-delice-des-sens.html" class="restaurants__link link--black link--no-decoration"></a>
+                    
+                    <div class="restaurants__card-content">
+                        <div class="restaurants__card-info">
+                            <h3 class="restaurants__card-title">Le délice des sens</h3>
+                            <p class="restaurants__card-text">Folie-méricourt</p>
+                        </div>
+
+                        <label class="restaurants__fa-heart-wrap">
+                            <input type="checkbox" class="restaurants__heart-checkbox">
+                            <i class="fa-regular fa-heart restaurants__heart-outline"></i>
+                            <i class="fa-solid fa-heart restaurants__heart-fill"></i>
+                        </label>
+                    </div>
+                </article>
             </div>
         </section>
 
         <footer class="footer">
             <div class="footer__wrapper">
-
                 <h2 class="footer__logo">ohmyfood</h2>
                 <nav class="footer__menu">
                     <ul class="footer__list">
