@@ -108,7 +108,7 @@
     }
 
     .restaurants{
-        gap: rem($gap-2xl-tablet);
+        gap: $gap-2xl-tablet;
 
         &__list{
             align-items: flex-start;

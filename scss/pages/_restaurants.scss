@@ -4,11 +4,12 @@
 @use "../abstracts/functions" as *;
 @use "../abstracts/placeholders" as *;
 
-.restaurant-hero{
+.restaurant-image{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
 
     &__wrapper{
         width: 100%;
@@ -159,7 +160,7 @@
         }
     }
 
-    .restaurant-hero{
+    .restaurant-image{
 
         &__image{
             height: rem(383);
