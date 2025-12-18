@@ -14,9 +14,19 @@
         font-family: "Shrikhand", sans-serif;
     }
 
+    &--extra-small{
+        font-size: rem(16);
+        font-weight: 300;
+    }
+
     &--small{
         font-size: rem(18);
         font-weight: 400;
+    }
+
+    &--small-semibold{
+        font-size: rem(18);
+        font-weight: 500;
     }
 
     &--small-bold{
@@ -27,6 +37,11 @@
     &--medium{
         font-size: rem(24);
         font-weight: 700;
+    }
+
+    &--large{
+        font-size: rem(28);
+        font-weight: 400;
     }
 
     &--wrap-pretty{
@@ -44,6 +59,17 @@
     &--small{
         font-size: rem(14);
         font-weight: 500;
+    }
+
+    &--small2{
+        font-size: rem(15);
+        font-weight: 300;
+    }
+
+    &--small2-bold{
+        font-size: rem(15);
+        font-weight: 700;
+        
     }
 
     &--medium{

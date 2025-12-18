@@ -18,6 +18,19 @@
         padding: $padding-logo;
     }
 
+    &__arrow-link{
+        text-decoration: none;
+        color: $color-dark-gray;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 17px;
+        top: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__location-container{
         height: rem(50);
         @include flex-row($gap-2xl);
@@ -41,6 +54,10 @@
                 height: rem(34.2);
                 width: rem(200);
                 padding: $padding-logo-desktop;
+            }
+
+            &__arrow-link{
+                top: 33px;
             }
         }
     }
