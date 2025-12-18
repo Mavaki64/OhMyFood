@@ -872,6 +872,7 @@ body {
   }
   .restaurant-hero__image {
     height: 23.9375rem;
+    object-position: center 55%;
   }
 }
 

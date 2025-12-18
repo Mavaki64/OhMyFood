@@ -160,9 +160,10 @@
     }
 
     .restaurant-hero{
+
         &__image{
             height: rem(383);
-
+            object-position: center 55%;
         }
     }
 }
