@@ -1,4 +1,4 @@
-# OhMyFood ��️
+# OhMyFood
 
 OhMyFood est une plateforme de réservation de menu de restaurants en ligne, développée dans le cadre d'un projet de formation. Le site permet aux utilisateurs de découvrir des restaurants d'exception et de consulter leurs menus de manière interactive et moderne.
 
